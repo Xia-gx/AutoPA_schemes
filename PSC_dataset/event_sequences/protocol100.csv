@@ -1,0 +1,58 @@
+pp,ap,mp,kp
+A,new,T_A, 
+A,encrypt,T_A,Pub_S
+A,hash,ID_A,hK_AS
+A,encrypt,ID_A,Pub_S
+A,hash,ID_B,hK_AS
+A,encrypt,ID_B,Pub_S
+A,encrypt,K_(Pub_A ),Pub_S
+A,send,ID_B, 
+A,send,T_A,Pub_S
+A,send,ID_A,hK_AS Pub_S
+A,send,ID_B,hK_AS Pub_S
+A,send,K_(Pub_A ),Pub_S
+S,receive,ID_B, 
+S,receive,T_A,Pub_S
+S,receive,ID_A,hK_AS Pub_S
+S,receive,ID_B,hK_AS Pub_S
+S,receive,K_(Pub_A ),Pub_S
+S,decrypt,T_A,Pri_S
+S,decrypt,ID_A,hK_AS
+S,decrypt,ID_A,Pri_S
+S,decrypt,ID_B,hK_AS
+S,decrypt,ID_B,Pri_S
+S,decrypt,K_(Pub_A ),Pri_S
+S,send,ID_A, 
+B,receive,ID_A, 
+B,new,T_B, 
+B,encrypt,T_B,Pub_S
+B,hash,ID_B,hK_BS
+B,encrypt,ID_B,Pub_S
+B,hash,ID_A,hK_BS
+B,encrypt,ID_A,Pub_S
+B,encrypt,K_AB,Pub_S
+B,send,ID_A, 
+B,send,T_B,Pub_S
+B,send,ID_B,hK_BS Pub_S
+B,send,ID_A,hK_BS Pub_S
+B,send,K_AB,Pub_S
+S,receive,ID_A, 
+S,receive,T_B,Pub_S
+S,receive,ID_B,hK_BS Pub_S
+S,receive,ID_A,hK_BS Pub_S
+S,receive,K_AB,Pub_S
+S,decrypt,T_B,Pri_S
+S,decrypt,ID_B,hK_BS
+S,decrypt,ID_B,Pri_S
+S,decrypt,ID_A,hK_BS
+S,decrypt,ID_A,Pri_S
+S,decrypt,K_AB,Pri_S
+S,new,T_S, 
+S,encrypt,T_S,Pub_A
+S,encrypt,K_AB,Pub_A
+S,send,T_S,Pub_A
+S,send,K_AB,Pub_A
+A,receive,T_S,Pub_A
+A,receive,K_AB,Pub_A
+A,decrypt,T_S,Pri_A
+A,decrypt,K_AB,Pri_A

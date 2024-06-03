@@ -1,0 +1,4 @@
+	A→B : ID_A,E_(Pub_B ) {N_A,ID_A}
+	B→A : E_(Pub_A ) {N_A+1,N_B,ID_B,K_AB }
+	A→B : E_(Pub_B ) {N_B+1}
+Tag: 3

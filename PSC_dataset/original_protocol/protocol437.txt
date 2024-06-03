@@ -1,0 +1,8 @@
+	A→B : N_A
+	B→A : hash{ID_B,K_BS,N_A,N_B},N_B
+	A→S : hash{ID_B,K_BS,N_A,N_B },N_A,N_B
+	S→A : hash{ID_B,K_BS,N_B }
+	A→B : hash{ID_B,K_BS,N_B },N_A^'
+	B→A : hash{ID_B,K_BS,N_A^',N_B^' },N_B^'
+	A→S : hash{ID_B,K_BS,N_A^',N_B^' },N_A^',N_B^'
+Tag: 2

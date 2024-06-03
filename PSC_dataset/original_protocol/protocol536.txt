@@ -1,0 +1,6 @@
+	A→B : ID_A,E_(K_AS ) {a^x,ID_B}
+	B→S : E_(K_AS ) {a^x,ID_B },E_(K_BS ) {a^y,ID_A }
+	S→B : E_(K_AS ) {a^x,a^y,ID_B},E_(K_BS ) {a^y,a^x,ID_A}
+	B→A : E_(K_AS ) {a^x,a^y,ID_B},hash{K_AB,ID_A}
+	A→B : hash{K_AB,ID_B}
+TagS : 1

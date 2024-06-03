@@ -1,0 +1,4 @@
+	A→B : ID_A,ID_B,N_A,a^x
+	B→A : ID_B,ID_A,a^y,E_(K_AB ) {N_B },hash{N_B,K_AB,N_A,a^y}
+	A→B : ID_A,ID_B,hash{K_AB,N_B+1}
+Tag: 2

@@ -1,0 +1,74 @@
+pp,ap,mp,kp
+B,encrypt,ID_B,K_BS
+B,encrypt,ID_A,K_BS
+B,new,N_B, 
+B,encrypt,N_B,K_BS
+B,send,ID_B,K_BS
+B,send,ID_A,K_BS
+B,send,N_B,K_BS
+A,receive,ID_B,K_BS
+A,receive,ID_A,K_BS
+A,receive,N_B,K_BS
+A,encrypt,ID_B,K_AS
+A,encrypt,ID_A,K_AS
+A,new,N_A, 
+A,encrypt,N_A,K_AS
+A,encrypt,ID_B,K_BS
+A,encrypt,ID_B,K_AS
+A,encrypt,ID_A,K_BS
+A,encrypt,ID_A,K_AS
+A,encrypt,N_B,K_BS
+A,encrypt,N_B,K_AS
+A,send,ID_A, 
+A,send,ID_B,K_AS
+A,send,ID_A,K_AS
+A,send,N_A,K_AS
+A,send,ID_B,K_BS K_AS
+A,send,ID_A,K_BS K_AS
+A,send,N_B,K_BS K_AS
+S,receive,ID_A, 
+S,receive,ID_B,K_AS
+S,receive,ID_A,K_AS
+S,receive,N_A,K_AS
+S,receive,ID_B,K_BS K_AS
+S,receive,ID_A,K_BS K_AS
+S,receive,N_B,K_BS K_AS
+S,decrypt,ID_B,K_AS
+S,decrypt,ID_A,K_AS
+S,decrypt,N_A,K_AS
+S,decrypt,ID_B,K_BS
+S,decrypt,ID_B,K_AS
+S,decrypt,ID_A,K_BS
+S,decrypt,ID_A,K_AS
+S,decrypt,N_B,K_BS
+S,decrypt,N_B,K_AS
+S,encrypt,ID_S,K_AS
+S,encrypt,K_AB,K_AS
+S,encrypt,N_A,K_AS
+S,encrypt,K_AB,K_AS
+S,encrypt,K_AB,K_AS
+S,encrypt,N_B,K_AS
+S,encrypt,N_B,K_AS
+S,send,ID_S,K_AS
+S,send,K_AB,K_AS
+S,send,N_A,K_AS
+S,send,K_AB,K_AS K_AS
+S,send,N_B,K_AS K_AS
+A,receive,ID_S,K_AS
+A,receive,K_AB,K_AS
+A,receive,N_A,K_AS
+A,receive,K_AB,K_AS K_AS
+A,receive,N_B,K_AS K_AS
+A,decrypt,ID_S,K_AS
+A,decrypt,K_AB,K_AS
+A,decrypt,N_A,K_AS
+A,decrypt,K_AB,K_AS
+A,decrypt,K_AB,K_AS
+A,decrypt,N_B,K_AS
+A,decrypt,N_B,K_AS
+A,encrypt,K_AB,K_AS
+A,encrypt,N_B,K_AS
+A,send,K_AB,K_AS
+A,send,N_B,K_AS
+B,receive,K_AB,K_AS
+B,receive,N_B,K_AS

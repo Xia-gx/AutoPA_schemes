@@ -1,0 +1,4 @@
+	A→B : ID_A,a^x
+	B→A : Sig_(Pri_B ) {ID_B,ID_A,a^y,hash{b^y,a^y,a^x}}
+	A→B : Sig_(Pri_A ) {ID_A,ID_B,hash{b^x,a^x,a^y }}
+Tag: 2

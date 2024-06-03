@@ -1,0 +1,3 @@
+	A→B : N_A
+	B→A : Cert_B,N_B,N_A,ID_A,Sig_(Pri_B ) {N_B,N_A,ID_A}
+Tag: 2

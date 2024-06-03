@@ -1,0 +1,4 @@
+	A→B : E_(K_AB ) {HMAC_(K_AB ) {P_N,N_A,a^x,ID_A },N_A,a^x,ID_A}
+	B→A : E_(K_AB ) {HMAC_(K_AB ) {P_N,N_A,N_B,a^y,ID_B },N_B,a^y,ID_B}
+	A→B : HMAC_(K_AB ) {P_N,N_A,N_B,ID_B}
+Tag: 4

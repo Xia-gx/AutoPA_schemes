@@ -1,0 +1,3 @@
+	A→B : ID_A,ID_B,E_(Pub_B ) {ID_A,P_N }
+	B→A : ID_B,ID_A,E_(Pub_A ) {ID_B,P_N}
+Tag: 2

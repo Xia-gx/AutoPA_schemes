@@ -1,0 +1,10 @@
+,pp,ap,mp,kp
+0,A,send,ID_A,
+1,B,receive,ID_A,
+2,B,send,ID_B,
+3,B,send,ID_B,K_AB
+4,A,receive,ID_B,
+5,A,receive,ID_B,K_AB
+6,A,new,N_A,K_AB
+7,A,send,N_A,K_AB
+8,B,receive,N_A,K_AB

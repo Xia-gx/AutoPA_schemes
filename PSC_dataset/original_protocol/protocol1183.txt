@@ -1,0 +1,4 @@
+	A→B : ID_A,N_A
+	B→A : HMAC_(K_AB ) {N_A,N_B,N_A ||ID_B },N_B
+	A→B : HMAC_(K_AB ) {N_A,N_B }
+Tag: 4

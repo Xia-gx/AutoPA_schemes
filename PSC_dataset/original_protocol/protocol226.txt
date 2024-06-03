@@ -1,0 +1,3 @@
+	A→B : N_A,K_(Pub_A )
+	B→A : ID_B,N_A,E_(Pub_A ) {HMAC_(Password_B ) {ID_B,ID_A,N_A}}
+Tag: 2

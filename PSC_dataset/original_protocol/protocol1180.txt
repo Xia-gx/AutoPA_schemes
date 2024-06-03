@@ -1,0 +1,7 @@
+	A→B : E_(K_AS ) {ID_A,ID_B,N_A,N_A^' }
+	B→S : E_(K_AS ) {ID_A,ID_B,N_A,N_A^' },E_(K_BS ) {ID_B,ID_A,N_B,N_B^' }
+        S→B : E_(K_AS ) {N_A,K_AB ||N_A^' },E_(K_AS ) {N_B,K_AB ||N_B^' },ID_S
+	B→A : E_(K_AS ) {N_B,K_AB ||N_B^' }, E_(K_AB ) {N_B^'}
+	A→B : E_(K_AB ) {N_A^',N_B^'+1}
+	B→A : E_(K_AB ) {N_A^'+1}
+Tag: 4

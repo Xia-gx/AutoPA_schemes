@@ -1,0 +1,4 @@
+        A→B : ID_A,Cert_A,N_A
+	B→A : E_(Pub_A ) {ID_B,E_(Password_B ) {ID_B },Cert_B,Sig_(Pri_B ) {ID_B,ID_A,T_B}}
+	A→B : E_(Pub_B ) {ID_A,E_(Password_B ) {ID_B,Sig_(Pri_A ) {ID_A,ID_B,T_A },Sig_(Pri_B ) {ID_B,ID_A,T_B}}}
+Tag: 4

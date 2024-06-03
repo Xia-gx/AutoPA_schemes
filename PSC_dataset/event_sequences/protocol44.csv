@@ -1,0 +1,45 @@
+pp,ap,mp,kp
+A,send,ID_A, 
+A,send,ID_B, 
+A,send,a^x, 
+B,receive,ID_A, 
+B,receive,ID_B, 
+B,receive,a^x, 
+B,sign,a^y,Pri_B
+B,encrypt,a^y,K_AB
+B,sign,a^x,Pri_B
+B,encrypt,a^x,K_AB
+B,send,ID_B, 
+B,send,ID_A, 
+B,send,Cert_B, 
+B,send,a^y, 
+B,send,a^y,Pri_B K_AB
+B,send,a^x,Pri_B K_AB
+A,receive,ID_B, 
+A,receive,ID_A, 
+A,receive,Cert_B, 
+A,receive,a^y, 
+A,receive,a^y,Pri_B K_AB
+A,receive,a^x,Pri_B K_AB
+A,verify,a^y,Pub_B
+A,decrypt,a^y,K_AB
+A,verify,a^x,Pub_B
+A,decrypt,a^x,K_AB
+A,sign,a^x,Pri_A
+A,encrypt,a^x,K_AB
+A,sign,a^y,Pri_A
+A,encrypt,a^y,K_AB
+A,send,ID_A, 
+A,send,ID_B, 
+A,send,Cert_A, 
+A,send,a^x,Pri_A K_AB
+A,send,a^y,Pri_A K_AB
+B,receive,ID_A, 
+B,receive,ID_B, 
+B,receive,Cert_A, 
+B,receive,a^x,Pri_A K_AB
+B,receive,a^y,Pri_A K_AB
+B,verify,a^x,Pub_A
+B,decrypt,a^x,K_AB
+B,verify,a^y,Pub_A
+B,decrypt,a^y,K_AB

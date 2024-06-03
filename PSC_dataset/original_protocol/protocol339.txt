@@ -1,0 +1,4 @@
+	A→B : N_A,E_(K_AB ) {K_(Pub_A ),a^x,T_A}
+	B→A : E_(Pub_A ) {ID_B,ID_A,a^y,E_(K_AB ) {N_A},E_(K_AB^' ) {N_A,N_B}}
+	A→B : E_(K_AB^' ) {N_B}
+Tag: 2

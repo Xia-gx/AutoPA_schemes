@@ -1,0 +1,4 @@
+	A→B : N_A
+	B→A : N_B,N_A,ID_A,E_(Pub_A ) {ID_B,K_AB},Sig_(Pri_B ) {N_B,N_A,ID_A,E_(Pub_A ) {ID_B,K_AB}}
+	A→B : N_A,N_B,ID_B,Sig_(Pri_A ) {N_A,N_B,ID_B}
+Tag: 3

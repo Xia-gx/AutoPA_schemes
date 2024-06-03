@@ -1,0 +1,4 @@
+        A→S : ID_A,E_(Pub_S ) {a^x,Password_A},N_A,N_A^'
+	S→A : a^x||a^y,hash{a^y}
+	A→S : ID_A,hash{a^x,a^y}
+Tag: 3

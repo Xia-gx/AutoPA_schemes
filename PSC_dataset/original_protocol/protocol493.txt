@@ -1,0 +1,7 @@
+	A→S : ID_A,ID_B
+	S→A : N_S
+	A→B : ID_A,ID_B,N_A,N_S,E_(K_AS ) {ID_A,ID_B,N_S,a^x }
+	B→S : ID_A,ID_B,N_A,N_B,E_(K_AS ) {ID_A,ID_B,N_S,a^x },E_(K_BS ) {ID_B,ID_A,N_B,a^y }
+	S→B : E_(K_AS ) {ID_B,N_A,a^y },E_(K_BS ) {ID_A,N_B,a^x }
+	B→A : E_(K_AS ) {ID_B,N_A,a^y }
+Tag: 3

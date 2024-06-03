@@ -1,0 +1,32 @@
+pp,ap,mp,kp
+A,send,ID_A, 
+A,send,K_(Pub_A ), 
+B,receive,ID_A, 
+B,receive,K_(Pub_A ), 
+B,encrypt,K_AB,Pub_A
+B,send,K_AB,Pub_A
+A,receive,K_AB,Pub_A
+A,decrypt,K_AB,Pri_A
+A,new,N_A, 
+A,encrypt,N_A,K_AB
+A,send,N_A,K_AB
+B,receive,N_A,K_AB
+B,decrypt,N_A,K_AB
+B,encrypt,ID_B,K_AB
+B,encrypt,K_(Pub_B ),K_AB
+B,encrypt,Cert_B,K_AB
+B,sign,N_A,Pri_B
+B,encrypt,N_A,K_AB
+B,send,ID_B,K_AB
+B,send,K_(Pub_B ),K_AB
+B,send,Cert_B,K_AB
+B,send,N_A,Pri_B K_AB
+A,receive,ID_B,K_AB
+A,receive,K_(Pub_B ),K_AB
+A,receive,Cert_B,K_AB
+A,receive,N_A,Pri_B K_AB
+A,decrypt,ID_B,K_AB
+A,decrypt,K_(Pub_B ),K_AB
+A,decrypt,Cert_B,K_AB
+A,verify,N_A,Pub_B
+A,decrypt,N_A,K_AB

@@ -1,0 +1,39 @@
+pp,ap,mp,kp
+A,encrypt,ID_A,Pub_B
+A,sign,ID_A,Pri_A
+A,encrypt,K_AB,Pub_B
+A,sign,K_AB,Pri_A
+A,new,T_A, 
+A,encrypt,T_A,Pub_B
+A,sign,T_A,Pri_A
+A,send,ID_A,Pub_B Pri_A
+A,send,K_AB,Pub_B Pri_A
+A,send,T_A,Pub_B Pri_A
+B,receive,ID_A,Pub_B Pri_A
+B,receive,K_AB,Pub_B Pri_A
+B,receive,T_A,Pub_B Pri_A
+B,decrypt,ID_A,Pri_B
+B,verify,ID_A,Pub_A
+B,decrypt,K_AB,Pri_B
+B,verify,K_AB,Pub_A
+B,decrypt,T_A,Pri_B
+B,verify,T_A,Pub_A
+B,encrypt,ID_B,Pub_A
+B,sign,ID_B,Pri_B
+B,encrypt,K_AB,Pub_A
+B,sign,K_AB,Pri_B
+B,new,T_B, 
+B,encrypt,T_B,Pub_A
+B,sign,T_B,Pri_B
+B,send,ID_B,Pub_A Pri_B
+B,send,K_AB,Pub_A Pri_B
+B,send,T_B,Pub_A Pri_B
+A,receive,ID_B,Pub_A Pri_B
+A,receive,K_AB,Pub_A Pri_B
+A,receive,T_B,Pub_A Pri_B
+A,decrypt,ID_B,Pri_A
+A,verify,ID_B,Pub_B
+A,decrypt,K_AB,Pri_A
+A,verify,K_AB,Pub_B
+A,decrypt,T_B,Pri_A
+A,verify,T_B,Pub_B

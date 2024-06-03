@@ -1,0 +1,6 @@
+        A→B : ID_A, E_(Password_A ) {a^x},N_A^'
+	B→A : E_(Password_A ) {a^y},E_(K_AB ) {N_B}
+	A→B : E_(K_AB ) {N_A,N_B}
+	B→A : E_(K_AB ) {N_A}
+	A→B : E_(K_AB ) {E_(Password_A ) {K_AB}}
+Tag: 4

@@ -1,0 +1,29 @@
+pp,ap,mp,kp
+A,send,a^x, 
+B,receive,a^x, 
+B,sign,a^y,Pri_B
+B,encrypt,a^y,K_AB
+B,sign,a^x,Pri_B
+B,encrypt,a^x,K_AB
+B,send,a^y, 
+B,send,a^y,Pri_B K_AB
+B,send,a^x,Pri_B K_AB
+A,receive,a^y, 
+A,receive,a^y,Pri_B K_AB
+A,receive,a^x,Pri_B K_AB
+A,verify,a^y,Pub_B
+A,decrypt,a^y,K_AB
+A,verify,a^x,Pub_B
+A,decrypt,a^x,K_AB
+A,sign,a^x,Pri_A
+A,encrypt,a^x,K_AB
+A,sign,a^y,Pri_A
+A,encrypt,a^y,K_AB
+A,send,a^x,Pri_A K_AB
+A,send,a^y,Pri_A K_AB
+B,receive,a^x,Pri_A K_AB
+B,receive,a^y,Pri_A K_AB
+B,verify,a^x,Pub_A
+B,decrypt,a^x,K_AB
+B,verify,a^y,Pub_A
+B,decrypt,a^y,K_AB

@@ -1,0 +1,4 @@
+	A→B : a^x
+	B→A : a^y,N_B,hash{K_AB,a^y,N_B,ID_B}
+	A→B : E_(K_AB ) {Sig_(Pri_A ) {hash{a^x,a^y,N_B,ID_B }}}
+Tag: 2

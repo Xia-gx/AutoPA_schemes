@@ -1,0 +1,4 @@
+	A→B : E_(Pub_A ) {ID_A,N_A },a^x
+	B→A : E_(Pub_A ) {N_B },a^y,HMAC_(K_AB ) {a^x,a^y,ID_B,ID_A}
+	A→B : HMAC_(K_AB ) {a^y,a^x,ID_A,ID_B}
+Tag: 2 

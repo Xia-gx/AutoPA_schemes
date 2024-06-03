@@ -1,0 +1,4 @@
+        A→B : N_A,N_A^'
+	B→A : E_(Pub_A ) {ID_B,N_B,Sig_(Pri_B ) {ID_A,N_A }}
+	A→B : N_B
+Tag: 4

@@ -1,0 +1,50 @@
+,pp,ap,mp,kp
+0,A,new,T_A,
+1,A,encrypt,ID_A,Pub_B
+2,A,new,N_A,
+3,A,encrypt,N_A,Pub_B
+4,A,sign,ID_A,Pri_A
+5,A,sign,T_A,Pri_A
+6,A,encrypt,ID_A,Pub_B
+7,A,sign,ID_A,Pri_A
+8,A,encrypt,N_A,Pub_B
+9,A,sign,N_A,Pri_A
+10,A,new,N_A^',
+11,A,send,ID_B,
+12,A,send,T_A,
+13,A,send,ID_A,Pub_B
+14,A,send,N_A,Pub_B
+15,A,send,ID_A,Pri_A
+16,A,send,T_A,Pri_A
+17,A,send,ID_A,Pub_B Pri_A
+18,A,send,N_A,Pub_B Pri_A
+19,A,send,N_A^',
+20,B,receive,ID_B,
+21,B,receive,T_A,
+22,B,receive,ID_A,Pub_B
+23,B,receive,N_A,Pub_B
+24,B,receive,ID_A,Pri_A
+25,B,receive,T_A,Pri_A
+26,B,receive,ID_A,Pub_B Pri_A
+27,B,receive,N_A,Pub_B Pri_A
+28,B,receive,N_A^',
+29,B,decrypt,ID_A,Pri_B
+30,B,decrypt,N_A,Pri_B
+31,B,verify,ID_A,Pub_A
+32,B,verify,T_A,Pub_A
+33,B,decrypt,ID_A,Pri_B
+34,B,verify,ID_A,Pub_A
+35,B,decrypt,N_A,Pri_B
+36,B,verify,N_A,Pub_A
+37,B,encrypt,ID_B,Pub_A
+38,B,encrypt,N_A+1,Pub_A
+39,B,send,ID_B,
+40,B,send,ID_A,
+41,B,send,ID_B,Pub_A
+42,B,send,N_A+1,Pub_A
+43,A,receive,ID_B,
+44,A,receive,ID_A,
+45,A,receive,ID_B,Pub_A
+46,A,receive,N_A+1,Pub_A
+47,A,decrypt,ID_B,Pri_A
+48,A,decrypt,N_A+1,Pri_A

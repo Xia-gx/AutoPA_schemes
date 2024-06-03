@@ -1,0 +1,8 @@
+	A→S : ID_A,ID_B
+	S→A : ID_A,ID_B,N_S,E_(Password_A ) {K_AS}, E_(Password_B ) {K_BS}
+	A→B : E_(K_AS ) {ID_A,ID_B,N_A,N_A^',E_(Password_A ) {N_S}}, N_S,E_(Password_B ) {K_BS}
+	B→S : E_(K_AS ) {ID_A,ID_B,N_A,N_A^',E_(Password_A ) {N_S}}, E_(K_BS ) {ID_B,ID_A,N_B,N_B^',E_(Password_B ) {N_S}}
+	S→B : E_(Password_A ) {N_A,K_AB ||N_A^'}, E_(Password_B ) {N_B,K_AB ||N_B^'}
+	B→A : E_(Password_A ) {N_A,K_AB ||N_A^'}, E_(K_AB ) {N_B}
+	A→B : E_(K_AB ) {hash{N_B }}
+Tag: 4

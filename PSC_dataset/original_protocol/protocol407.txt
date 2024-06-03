@@ -1,0 +1,4 @@
+	A→B : ID_A,Password_A ||a^x
+	B→A : Password_A ||a^y,hash{K_AB,a^x }
+	A→B : hash{K_AB,a^y }
+Tag: 2

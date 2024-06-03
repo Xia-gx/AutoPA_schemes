@@ -1,0 +1,4 @@
+	A→B : N_A
+	B→A : N_B,K_(Pub_B )
+	A→B : E_(Pub_B ) { hash{N_A,N_B,ID_B },K_AB },E_(K_AB ) {ID_A,Cert_A,Sig_(Pri_A ) {ID_A,N_A,N_B}}
+Tag: 2

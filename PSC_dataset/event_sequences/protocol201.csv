@@ -1,0 +1,133 @@
+pp,ap,mp,kp
+A,new,N_A^', 
+A,send,N_A^', 
+B,receive,N_A^', 
+B,new,N_B^', 
+B,send,N_B^', 
+B,send,N_A^', 
+B,send,a^y, 
+A,receive,N_B^', 
+A,receive,N_A^', 
+A,receive,a^y, 
+A,send,N_A^', 
+A,send,N_B^', 
+A,send,a^x, 
+B,receive,N_A^', 
+B,receive,N_B^', 
+B,receive,a^x, 
+B,encrypt,ID_B,K_AB
+B,encrypt,ID_A,K_AB
+B,new,N_B, 
+B,encrypt,N_B,Pub_A
+B,encrypt,N_B,K_AB
+B,send,N_B^', 
+B,send,N_A^', 
+B,send,a^y, 
+B,send,ID_B,K_AB
+B,send,ID_A,K_AB
+B,send,N_B,Pub_A K_AB
+A,receive,N_B^', 
+A,receive,N_A^', 
+A,receive,a^y, 
+A,receive,ID_B,K_AB
+A,receive,ID_A,K_AB
+A,receive,N_B,Pub_A K_AB
+A,decrypt,ID_B,K_AB
+A,decrypt,ID_A,K_AB
+A,decrypt,N_B,Pri_A
+A,decrypt,N_B,K_AB
+A,new,N_A, 
+A,encrypt,N_A,Pub_B
+A,encrypt,N_A,K_AB
+A,encrypt,N_B,Pub_B
+A,encrypt,N_B,K_AB
+A,encrypt,ID_A,K_AB
+A,encrypt,ID_B,K_AB
+A,hash,ID_A,hK_AB^'
+A,encrypt,ID_A,K_AB
+A,hash,ID_B,hK_AB^'
+A,encrypt,ID_B,K_AB
+A,hash,a^x,hK_AB^'
+A,encrypt,a^x,K_AB
+A,hash,a^y,hK_AB^'
+A,encrypt,a^y,K_AB
+A,send,N_A^', 
+A,send,N_B^', 
+A,send,a^x, 
+A,send,N_A,Pub_B K_AB
+A,send,N_B,Pub_B K_AB
+A,send,ID_A,K_AB
+A,send,ID_B,K_AB
+A,send,ID_A,hK_AB^' K_AB
+A,send,ID_B,hK_AB^' K_AB
+A,send,a^x,hK_AB^' K_AB
+A,send,a^y,hK_AB^' K_AB
+B,receive,N_A^', 
+B,receive,N_B^', 
+B,receive,a^x, 
+B,receive,N_A,Pub_B K_AB
+B,receive,N_B,Pub_B K_AB
+B,receive,ID_A,K_AB
+B,receive,ID_B,K_AB
+B,receive,ID_A,hK_AB^' K_AB
+B,receive,ID_B,hK_AB^' K_AB
+B,receive,a^x,hK_AB^' K_AB
+B,receive,a^y,hK_AB^' K_AB
+B,decrypt,N_A,Pri_B
+B,decrypt,N_A,K_AB
+B,decrypt,N_B,Pri_B
+B,decrypt,N_B,K_AB
+B,decrypt,ID_A,K_AB
+B,decrypt,ID_B,K_AB
+B,decrypt,ID_A,hK_AB^'
+B,decrypt,ID_A,K_AB
+B,decrypt,ID_B,hK_AB^'
+B,decrypt,ID_B,K_AB
+B,decrypt,a^x,hK_AB^'
+B,decrypt,a^x,K_AB
+B,decrypt,a^y,hK_AB^'
+B,decrypt,a^y,K_AB
+B,encrypt,ID_B,K_AB
+B,encrypt,ID_A,K_AB
+B,encrypt,a^y,K_AB
+B,encrypt,a^x,K_AB
+B,hash,ID_A,hK_AB^'
+B,encrypt,ID_A,K_AB
+B,hash,ID_B,hK_AB^'
+B,encrypt,ID_B,K_AB
+B,hash,a^x,hK_AB^'
+B,encrypt,a^x,K_AB
+B,hash,a^y,hK_AB^'
+B,encrypt,a^y,K_AB
+B,send,N_B^', 
+B,send,N_A^', 
+B,send,ID_B,K_AB
+B,send,ID_A,K_AB
+B,send,a^y,K_AB
+B,send,a^x,K_AB
+B,send,ID_A,hK_AB^' K_AB
+B,send,ID_B,hK_AB^' K_AB
+B,send,a^x,hK_AB^' K_AB
+B,send,a^y,hK_AB^' K_AB
+A,receive,N_B^', 
+A,receive,N_A^', 
+A,receive,ID_B,K_AB
+A,receive,ID_A,K_AB
+A,receive,a^y,K_AB
+A,receive,a^x,K_AB
+A,receive,ID_A,hK_AB^' K_AB
+A,receive,ID_B,hK_AB^' K_AB
+A,receive,a^x,hK_AB^' K_AB
+A,receive,a^y,hK_AB^' K_AB
+A,decrypt,ID_B,K_AB
+A,decrypt,ID_A,K_AB
+A,decrypt,a^y,K_AB
+A,decrypt,a^x,K_AB
+A,decrypt,ID_A,hK_AB^'
+A,decrypt,ID_A,K_AB
+A,decrypt,ID_B,hK_AB^'
+A,decrypt,ID_B,K_AB
+A,decrypt,a^x,hK_AB^'
+A,decrypt,a^x,K_AB
+A,decrypt,a^y,hK_AB^'
+A,decrypt,a^y,K_AB

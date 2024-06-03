@@ -1,0 +1,4 @@
+	A→B : ID_A,N_A
+        B→A : N_B ||K_AB,hash{K_AB ||N_A ||N_B},ID_B
+	A→B : hash{K_AB ||N_B}
+Tag: 4

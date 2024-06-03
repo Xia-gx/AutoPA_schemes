@@ -1,0 +1,6 @@
+	A→B : N_A
+	B→A : P_N,E_(K_BS ) {N_B,hash{ID_B ||N_A ||N_B }}
+	A→S : P_N,E_(K_BS ) {N_B,hash{ID_B ||N_A ||N_B }},HMAC_(K_AS ) {ID_A ||N_A ||P_N}
+	S→A : E_(K_BS ) {ID_B ||N_B},HMAC_(K_AS ) {ID_A ||N_A}
+	A→B : E_(K_BS ) {ID_B ||N_B}
+Tag: 2

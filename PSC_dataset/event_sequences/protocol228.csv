@@ -1,0 +1,105 @@
+pp,ap,mp,kp
+A,hash,ID_A, 
+A,hash,a^x, 
+A,hash,b^x, 
+A,hash,Password_A, 
+A,hash,K_(Pub_A ), 
+A,send,ID_A, 
+A,send,a^x, 
+A,send,b^x, 
+A,send,K_(Pub_A ), 
+A,send,ID_A, 
+A,send,a^x, 
+A,send,b^x, 
+A,send,Password_A, 
+A,send,K_(Pub_A ), 
+B,receive,ID_A, 
+B,receive,a^x, 
+B,receive,b^x, 
+B,receive,K_(Pub_A ), 
+B,receive,ID_A, 
+B,receive,a^x, 
+B,receive,b^x, 
+B,receive,Password_A, 
+B,receive,K_(Pub_A ), 
+B,hash,ID_B, 
+B,hash,a^y, 
+B,hash,b^y, 
+B,hash,Password_A, 
+B,send,ID_B, 
+B,send,a^y, 
+B,send,b^y, 
+B,send,ID_B, 
+B,send,a^y, 
+B,send,b^y, 
+B,send,Password_A, 
+A,receive,ID_B, 
+A,receive,a^y, 
+A,receive,b^y, 
+A,receive,ID_B, 
+A,receive,a^y, 
+A,receive,b^y, 
+A,receive,Password_A, 
+A,hash,ID_B, 
+A,sign,ID_B,Pri_A
+A,encrypt,ID_B,K_AB
+A,hash,a^y, 
+A,sign,a^y,Pri_A
+A,encrypt,a^y,K_AB
+A,hash,b^y, 
+A,sign,b^y,Pri_A
+A,encrypt,b^y,K_AB
+A,hash,Password_A, 
+A,sign,Password_A,Pri_A
+A,encrypt,Password_A,K_AB
+A,send,ID_B,Pri_A K_AB
+A,send,a^y,Pri_A K_AB
+A,send,b^y,Pri_A K_AB
+A,send,Password_A,Pri_A K_AB
+B,receive,ID_B,Pri_A K_AB
+B,receive,a^y,Pri_A K_AB
+B,receive,b^y,Pri_A K_AB
+B,receive,Password_A,Pri_A K_AB
+B,verify,ID_B,Pub_A
+B,decrypt,ID_B,K_AB
+B,verify,a^y,Pub_A
+B,decrypt,a^y,K_AB
+B,verify,b^y,Pub_A
+B,decrypt,b^y,K_AB
+B,verify,Password_A,Pub_A
+B,decrypt,Password_A,K_AB
+B,hash,ID_A, 
+B,sign,ID_A,Pri_B
+B,encrypt,ID_A,K_AB
+B,hash,a^x, 
+B,sign,a^x,Pri_B
+B,encrypt,a^x,K_AB
+B,hash,b^x, 
+B,sign,b^x,Pri_B
+B,encrypt,b^x,K_AB
+B,hash,Password_A, 
+B,sign,Password_A,Pri_B
+B,encrypt,Password_A,K_AB
+B,hash,K_(Pub_A ), 
+B,sign,K_(Pub_A ),Pri_B
+B,encrypt,K_(Pub_A ),K_AB
+B,send,ID_A,Pri_B K_AB
+B,send,a^x,Pri_B K_AB
+B,send,b^x,Pri_B K_AB
+B,send,Password_A,Pri_B K_AB
+B,send,K_(Pub_A ),Pri_B K_AB
+A,receive,ID_A,Pri_B K_AB
+A,receive,a^x,Pri_B K_AB
+A,receive,b^x,Pri_B K_AB
+A,receive,Password_A,Pri_B K_AB
+A,receive,K_(Pub_A ),Pri_B K_AB
+A,verify,ID_A,Pub_B
+A,decrypt,ID_A,K_AB
+A,verify,a^x,Pub_B
+A,decrypt,a^x,K_AB
+A,verify,b^x,Pub_B
+A,decrypt,b^x,K_AB
+A,verify,Password_A,Pub_B
+A,decrypt,Password_A,K_AB
+A,verify,K_(Pub_A ),Pub_B
+A,decrypt,K_(Pub_A ),K_AB

@@ -1,0 +1,5 @@
+	A→B : ID_A,ID_B,a^x
+	B→S : E_(K_BS ) {ID_A,ID_B,a^y},E_(K_AB ) {ID_A,a^x,a^y}
+        S→A : E_(K_AS ) {ID_A,ID_B,a^y},E_(K_AB ) {ID_A,a^x,a^y},ID_S
+	A→B : E_(K_AB ) {ID_B,a^x,a^y}
+Tag: 1

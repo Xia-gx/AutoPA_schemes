@@ -1,0 +1,4 @@
+	A→S : ID_A,E_(Pub_S ) {N_A,Password_A}
+	S→A : N_A||N_S,hash{N_S}
+	A→S : ID_A,hash{N_A,N_S}
+Tag: 1

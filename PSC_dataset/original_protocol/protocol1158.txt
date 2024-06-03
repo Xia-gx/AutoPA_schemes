@@ -1,0 +1,4 @@
+        A→B : Cert_A,N_A,ID_A
+	B→A : E_(Pub_A ) {a^x },Cert_B,Sig_(Pri_B ) {N_A,E_(Pub_A ) {a^x }}
+	A→B : E_(Pub_B ) {a^y },Sig_(Pri_A ) {E_(Pub_B ) {a^y },E_(Pub_A ) {a^x }}
+Tag: 4

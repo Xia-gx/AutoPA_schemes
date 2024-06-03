@@ -1,0 +1,88 @@
+,pp,ap,mp,kp
+0,A,new,N_A,
+1,A,send,ID_A,
+2,A,send,Cert_A,
+3,A,send,N_A,
+4,B,receive,ID_A,
+5,B,receive,Cert_A,
+6,B,receive,N_A,
+7,B,encrypt,ID_B,Pub_A
+8,B,encrypt,ID_B,Pub_A
+9,B,encrypt,Cert_B,Pub_A
+10,B,sign,ID_B,Pri_B
+11,B,encrypt,ID_B,Pub_A
+12,B,sign,ID_A,Pri_B
+13,B,encrypt,ID_A,Pub_A
+14,B,new,T_B,
+15,B,sign,T_B,Pri_B
+16,B,encrypt,T_B,Pub_A
+17,B,send,ID_B,Pub_A
+18,B,send,ID_B,Pub_A
+19,B,send,Cert_B,Pub_A
+20,B,send,ID_B,Pri_B Pub_A
+21,B,send,ID_A,Pri_B Pub_A
+22,B,send,T_B,Pri_B Pub_A
+23,A,receive,ID_B,Pub_A
+24,A,receive,ID_B,Pub_A
+25,A,receive,Cert_B,Pub_A
+26,A,receive,ID_B,Pri_B Pub_A
+27,A,receive,ID_A,Pri_B Pub_A
+28,A,receive,T_B,Pri_B Pub_A
+29,A,decrypt,ID_B,Pri_A
+30,A,decrypt,ID_B,Pri_A
+31,A,decrypt,Cert_B,Pri_A
+32,A,verify,ID_B,Pub_B
+33,A,decrypt,ID_B,Pri_A
+34,A,verify,ID_A,Pub_B
+35,A,decrypt,ID_A,Pri_A
+36,A,verify,T_B,Pub_B
+37,A,decrypt,T_B,Pri_A
+38,A,encrypt,ID_A,Pub_B
+39,A,encrypt,ID_B,Password_B
+40,A,encrypt,ID_B,Pub_B
+41,A,sign,ID_A,Pri_A
+42,A,encrypt,ID_A,Password_B
+43,A,encrypt,ID_A,Pub_B
+44,A,sign,ID_B,Pri_A
+45,A,encrypt,ID_B,Password_B
+46,A,encrypt,ID_B,Pub_B
+47,A,new,T_A,
+48,A,sign,T_A,Pri_A
+49,A,encrypt,T_A,Password_B
+50,A,encrypt,T_A,Pub_B
+51,A,encrypt,ID_B,Password_B
+52,A,encrypt,ID_B,Pub_B
+53,A,encrypt,ID_A,Password_B
+54,A,encrypt,ID_A,Pub_B
+55,A,encrypt,T_B,Password_B
+56,A,encrypt,T_B,Pub_B
+57,A,send,ID_A,Pub_B
+58,A,send,ID_B,Password_B Pub_B
+59,A,send,ID_A,
+60,A,send,ID_B,
+61,A,send,T_A,
+62,A,send,ID_B,
+63,A,send,ID_A,
+64,A,send,T_B,
+65,B,receive,ID_A,Pub_B
+66,B,receive,ID_B,Password_B Pub_B
+67,B,receive,ID_A,
+68,B,receive,ID_B,
+69,B,receive,T_A,
+70,B,receive,ID_B,
+71,B,receive,ID_A,
+72,B,receive,T_B,
+73,B,decrypt,ID_A,Pri_B
+74,B,decrypt,ID_B,Pri_B
+75,B,verify,ID_A,Pub_A
+76,B,decrypt,ID_A,Pri_B
+77,B,verify,ID_B,Pub_A
+78,B,decrypt,ID_B,Pri_B
+79,B,verify,T_A,Pub_A
+80,B,decrypt,T_A,Pri_B
+81,B,verify,ID_B,Pub_B
+82,B,decrypt,ID_B,Pri_B
+83,B,verify,ID_A,Pub_B
+84,B,decrypt,ID_A,Pri_B
+85,B,verify,T_B,Pub_B
+86,B,decrypt,T_B,Pri_B

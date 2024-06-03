@@ -1,0 +1,4 @@
+	A→B : ID_A,N_A
+	B→A : ID_B,N_B ||hash{Password_A,N_A },hash{Password_A,N_B,N_A}
+	A→B : ID_A,ID_B,hash{ID_A,ID_B,N_A,N_B,Password_A}
+TagS : 4

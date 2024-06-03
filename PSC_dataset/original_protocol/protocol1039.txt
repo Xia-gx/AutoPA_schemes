@@ -1,0 +1,4 @@
+        A→B : N_A,N_A^'
+	B→A : N_B,E_(K_AB ) {ID_A,ID_B,N_A,N_B}
+	A→B : E_(K_AB ) {ID_A,N_B}
+Tag: 4

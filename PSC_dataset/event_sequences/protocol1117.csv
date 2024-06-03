@@ -1,0 +1,63 @@
+,pp,ap,mp,kp
+0,A,new,N_A,
+1,A,send,ID_A,
+2,A,send,ID_B,
+3,A,send,N_A,
+4,S,receive,ID_A,
+5,S,receive,ID_B,
+6,S,receive,N_A,
+7,S,new,T_S,
+8,S,encrypt,T_S,Password_A
+9,S,encrypt,K_AB,Password_A
+10,S,encrypt,ID_B,Password_A
+11,S,encrypt,T_S,K_BS
+12,S,encrypt,T_S,Password_A
+13,S,encrypt,K_AB,K_BS
+14,S,encrypt,K_AB,Password_A
+15,S,encrypt,ID_A,K_BS
+16,S,encrypt,ID_A,Password_A
+17,S,encrypt,ID_B,K_BS
+18,S,encrypt,ID_B,Password_A
+19,S,send,T_S,Password_A
+20,S,send,K_AB,Password_A
+21,S,send,ID_B,Password_A
+22,S,send,T_S,K_BS Password_A
+23,S,send,K_AB,K_BS Password_A
+24,S,send,ID_A,K_BS Password_A
+25,S,send,ID_B,K_BS Password_A
+26,A,receive,T_S,Password_A
+27,A,receive,K_AB,Password_A
+28,A,receive,ID_B,Password_A
+29,A,receive,T_S,K_BS Password_A
+30,A,receive,K_AB,K_BS Password_A
+31,A,receive,ID_A,K_BS Password_A
+32,A,receive,ID_B,K_BS Password_A
+33,A,encrypt,T_S,K_BS
+34,A,encrypt,K_AB,K_BS
+35,A,encrypt,ID_A,K_BS
+36,A,encrypt,ID_B,K_BS
+37,A,encrypt,ID_A,K_AB
+38,A,new,T_A,
+39,A,encrypt,T_A,K_AB
+40,A,send,T_S,K_BS
+41,A,send,K_AB,K_BS
+42,A,send,ID_A,K_BS
+43,A,send,ID_B,K_BS
+44,A,send,ID_A,K_AB
+45,A,send,T_A,K_AB
+46,B,receive,T_S,K_BS
+47,B,receive,K_AB,K_BS
+48,B,receive,ID_A,K_BS
+49,B,receive,ID_B,K_BS
+50,B,receive,ID_A,K_AB
+51,B,receive,T_A,K_AB
+52,B,decrypt,T_S,K_BS
+53,B,decrypt,K_AB,K_BS
+54,B,decrypt,ID_A,K_BS
+55,B,decrypt,ID_B,K_BS
+56,B,decrypt,ID_A,K_AB
+57,B,decrypt,T_A,K_AB
+58,B,encrypt,T_A+1,K_AB
+59,B,send,T_A+1,K_AB
+60,A,receive,T_A+1,K_AB
+61,A,decrypt,T_A+1,K_AB

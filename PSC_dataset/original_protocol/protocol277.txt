@@ -1,0 +1,4 @@
+	A→B : N_A
+	B→A : Sig_(Pri_B ) {ID_A,N_A }
+	A→B : Sig_(Pri_A ) {ID_B,T_A}
+Tag: 2

@@ -1,0 +1,5 @@
+	A→B : ID_A,E_(Pub_S ) {K_AS,a^x,Password_A}
+	B→S : ID_A,E_(Pub_S ) {K_AS,a^x,Password_A},E_(Pub_S ) {K_BS,a^y,Password_B}
+	S→B : E_(K_AS ) {ID_B,a^y},E_(K_BS ) {ID_A,a^x}
+	B→A : E_(K_AS ) {ID_B,a^y},E_(K_AB ) {hash{ID_A,E_(Pub_S ) {K_AS,a^x,Password_A}}}
+Tag: 1

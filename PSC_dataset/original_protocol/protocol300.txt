@@ -1,0 +1,7 @@
+	A→B : K_(Pub_A ),N_A
+	B→A : E_(Pub_A ) {N_B}
+	A→B : hash{N_B}
+	B→A : N_B^',E_(Pub_A ) {K_AB,hash{Password_B,ID_A,ID_B,N_A,N_B^' }}
+	A→B : E_(K_AB ) {N_A^',ID_B }
+	B→A : hash{ID_A,ID_B,N_A^',N_B^'}
+Tag: 2

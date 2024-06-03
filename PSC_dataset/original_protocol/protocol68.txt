@@ -1,0 +1,4 @@
+	A→B : E_(Pub_B ) {K_AB}
+	B→A : E_(K_AB ) {N_B}
+	A→B : E_(K_AB ) {Cert_A,Sig_(Pri_A ) {N_B}}
+Tag: 2

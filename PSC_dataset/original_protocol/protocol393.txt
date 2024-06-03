@@ -1,0 +1,9 @@
+	A→S : ID_A,ID_B,E_(Pub_S ) {N_A^',N_A ||ID_B,N_A || K_AS }
+	S→B : ID_A,ID_B
+	B→S : ID_A,ID_B,E_(Pub_S ) {N_B^',N_B ||ID_A,N_B || K_BS }
+	S→A : N_A^' ||E_(K_AS ) {N_A ||E_(K_AS ) {N_A ||K_AB }}
+	S→B : N_B^' ||E_(K_BS ) {N_B ||E_(K_BS ) {N_B ||K_AB }}
+	A→B : E_(K_AB ) {N_A^'}
+	B→A : E_(K_AB ) {hash{N_A^' },N_B^'}
+	A→B : E_(K_AB ) {N_B^'}
+Tag: 2

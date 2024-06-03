@@ -1,0 +1,152 @@
+,pp,ap,mp,kp
+0,A,new,N_A,
+1,A,send,ID_A,
+2,A,send,N_A,
+3,A,send,a^x,
+4,B,receive,ID_A,
+5,B,receive,N_A,
+6,B,receive,a^x,
+7,B,new,N_B,
+8,B,sign,N_B,Pri_B
+9,B,sign,a^y,Pri_B
+10,B,sign,N_A+1,Pri_B
+11,B,sign,a^x,Pri_B
+12,B,sign,ID_B,Pri_B
+13,B,sign,ID_A,Pri_B
+14,B,hash,N_A+1,hK_AB
+15,B,hash,a^x,hK_AB
+16,B,hash,N_B,hK_AB
+17,B,hash,a^y,hK_AB
+18,B,hash,ID_A,hK_AB
+19,B,hash,ID_B,hK_AB
+20,B,hash,ID_A,hK_AB
+21,B,hash,ID_B,hK_AB
+22,B,send,Cert_B,
+23,B,send,N_B,
+24,B,send,a^y,
+25,B,send,N_B,Pri_B
+26,B,send,a^y,Pri_B
+27,B,send,N_A+1,Pri_B
+28,B,send,a^x,Pri_B
+29,B,send,ID_B,Pri_B
+30,B,send,ID_A,Pri_B
+31,B,send,N_A+1,Pri_A hK_AB
+32,B,send,a^x,Pri_A hK_AB
+33,B,send,N_B,Pri_A hK_AB
+34,B,send,a^y,Pri_A hK_AB
+35,B,send,ID_A,Pri_A hK_AB
+36,B,send,ID_B,Pri_A hK_AB
+37,B,send,ID_A,hK_AB
+38,B,send,ID_B,hK_AB
+39,A,receive,Cert_B,
+40,A,receive,N_B,
+41,A,receive,a^y,
+42,A,receive,N_B,Pri_B
+43,A,receive,a^y,Pri_B
+44,A,receive,N_A+1,Pri_B
+45,A,receive,a^x,Pri_B
+46,A,receive,ID_B,Pri_B
+47,A,receive,ID_A,Pri_B
+48,A,receive,N_A+1,Pri_A hK_AB
+49,A,receive,a^x,Pri_A hK_AB
+50,A,receive,N_B,Pri_A hK_AB
+51,A,receive,a^y,Pri_A hK_AB
+52,A,receive,ID_A,Pri_A hK_AB
+53,A,receive,ID_B,Pri_A hK_AB
+54,A,receive,ID_A,hK_AB
+55,A,receive,ID_B,hK_AB
+56,A,verify,N_B,Pub_B
+57,A,verify,a^y,Pub_B
+58,A,verify,N_A+1,Pub_B
+59,A,verify,a^x,Pub_B
+60,A,verify,ID_B,Pub_B
+61,A,verify,ID_A,Pub_B
+62,A,verify,N_A+1,Pub_A
+63,A,decrypt,N_A+1,hK_AB
+64,A,verify,a^x,Pub_A
+65,A,decrypt,a^x,hK_AB
+66,A,verify,N_B,Pub_A
+67,A,decrypt,N_B,hK_AB
+68,A,verify,a^y,Pub_A
+69,A,decrypt,a^y,hK_AB
+70,A,verify,ID_A,Pub_A
+71,A,decrypt,ID_A,hK_AB
+72,A,verify,ID_B,Pub_A
+73,A,decrypt,ID_B,hK_AB
+74,A,decrypt,ID_A,hK_AB
+75,A,decrypt,ID_B,hK_AB
+76,A,new,N_A^',
+77,A,sign,N_A^',Pri_A
+78,A,sign,a^x,Pri_A
+79,A,sign,N_B+1,Pri_A
+80,A,sign,a^y,Pri_A
+81,A,sign,ID_A,Pri_A
+82,A,sign,ID_B,Pri_A
+83,A,sign,N_A^',Pri_A
+84,A,hash,N_A^',hK_AB
+85,A,sign,a^x,Pri_A
+86,A,hash,a^x,hK_AB
+87,A,sign,N_B+1,Pri_A
+88,A,hash,N_B+1,hK_AB
+89,A,sign,a^y,Pri_A
+90,A,hash,a^y,hK_AB
+91,A,sign,ID_A,Pri_A
+92,A,hash,ID_A,hK_AB
+93,A,sign,ID_B,Pri_A
+94,A,hash,ID_B,hK_AB
+95,A,hash,ID_A,hK_AB
+96,A,hash,ID_B,hK_AB
+97,A,send,Cert_A,
+98,A,send,N_A^',
+99,A,send,a^x,
+100,A,send,N_A^',Pri_A
+101,A,send,a^x,Pri_A
+102,A,send,N_B+1,Pri_A
+103,A,send,a^y,Pri_A
+104,A,send,ID_A,Pri_A
+105,A,send,ID_B,Pri_A
+106,A,send,N_A^',Pri_A hK_AB
+107,A,send,a^x,Pri_A hK_AB
+108,A,send,N_B+1,Pri_A hK_AB
+109,A,send,a^y,Pri_A hK_AB
+110,A,send,ID_A,Pri_A hK_AB
+111,A,send,ID_B,Pri_A hK_AB
+112,A,send,ID_A,hK_AB
+113,A,send,ID_B,hK_AB
+114,B,receive,Cert_A,
+115,B,receive,N_A^',
+116,B,receive,a^x,
+117,B,receive,N_A^',Pri_A
+118,B,receive,a^x,Pri_A
+119,B,receive,N_B+1,Pri_A
+120,B,receive,a^y,Pri_A
+121,B,receive,ID_A,Pri_A
+122,B,receive,ID_B,Pri_A
+123,B,receive,N_A^',Pri_A hK_AB
+124,B,receive,a^x,Pri_A hK_AB
+125,B,receive,N_B+1,Pri_A hK_AB
+126,B,receive,a^y,Pri_A hK_AB
+127,B,receive,ID_A,Pri_A hK_AB
+128,B,receive,ID_B,Pri_A hK_AB
+129,B,receive,ID_A,hK_AB
+130,B,receive,ID_B,hK_AB
+131,B,verify,N_A^',Pub_A
+132,B,verify,a^x,Pub_A
+133,B,verify,N_B+1,Pub_A
+134,B,verify,a^y,Pub_A
+135,B,verify,ID_A,Pub_A
+136,B,verify,ID_B,Pub_A
+137,B,verify,N_A^',Pub_A
+138,B,decrypt,N_A^',hK_AB
+139,B,verify,a^x,Pub_A
+140,B,decrypt,a^x,hK_AB
+141,B,verify,N_B+1,Pub_A
+142,B,decrypt,N_B+1,hK_AB
+143,B,verify,a^y,Pub_A
+144,B,decrypt,a^y,hK_AB
+145,B,verify,ID_A,Pub_A
+146,B,decrypt,ID_A,hK_AB
+147,B,verify,ID_B,Pub_A
+148,B,decrypt,ID_B,hK_AB
+149,B,decrypt,ID_A,hK_AB
+150,B,decrypt,ID_B,hK_AB

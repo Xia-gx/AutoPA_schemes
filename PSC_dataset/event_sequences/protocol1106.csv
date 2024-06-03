@@ -1,0 +1,39 @@
+,pp,ap,mp,kp
+0,A,encrypt,K_(Pub_A),Password_A
+1,A,new,T_A,
+2,A,encrypt,T_A,Password_A
+3,A,new,N_A^',
+4,A,send,ID_A,
+5,A,send,K_(Pub_A),Password_A
+6,A,send,T_A,Password_A
+7,A,send,N_A^',
+8,B,receive,ID_A,
+9,B,receive,K_(Pub_A),Password_A
+10,B,receive,T_A,Password_A
+11,B,receive,N_A^',
+12,B,encrypt,K_AB,Pub_A
+13,B,encrypt,K_AB,Password_A
+14,B,new,T_B,
+15,B,encrypt,T_B,Pub_A
+16,B,encrypt,T_B,Password_A
+17,B,send,K_AB,Pub_A Password_A
+18,B,send,T_B,Pub_A Password_A
+19,A,receive,K_AB,Pub_A Password_A
+20,A,receive,T_B,Pub_A Password_A
+21,A,decrypt,K_AB,Pri_A
+22,A,decrypt,T_B,Pri_A
+23,A,new,N_A,
+24,A,send,N_A,
+25,B,receive,N_A,
+26,B,encrypt,N_A,K_AB
+27,B,new,N_B,
+28,B,encrypt,N_B,K_AB
+29,B,send,N_A,K_AB
+30,B,send,N_B,K_AB
+31,A,receive,N_A,K_AB
+32,A,receive,N_B,K_AB
+33,A,decrypt,N_A,K_AB
+34,A,decrypt,N_B,K_AB
+35,A,new,N_B,
+36,A,send,N_B,K_AB
+37,B,receive,N_B,K_AB

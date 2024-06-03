@@ -1,0 +1,12 @@
+pp,ap,mp,kp
+A,new,N_A, 
+A,send,N_A, 
+B,receive,N_A, 
+B,hash,N_A,hK_AB
+B,hash,ID_B,hK_AB
+B,send,N_A,hK_AB
+B,send,ID_B,hK_AB
+A,receive,N_A,hK_AB
+A,receive,ID_B,hK_AB
+A,decrypt,N_A,hK_AB
+A,decrypt,ID_B,hK_AB

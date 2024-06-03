@@ -1,0 +1,3 @@
+	A→B : E_(K_AB ) {T_A,ID_A,a^x}
+	B→A : E_(K_AB ) {T_B,ID_B,a^y}
+Tag: 3

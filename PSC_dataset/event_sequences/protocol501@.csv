@@ -1,0 +1,33 @@
+,pp,ap,mp,kp
+0,A,send,ID_A,
+1,A,send,ID_B,
+2,S,receive,ID_A,
+3,S,receive,ID_B,
+4,S,encrypt,K_AB,K_AS
+5,S,encrypt,ID_B,K_AS
+6,S,encrypt,K_AB,K_BS
+7,S,encrypt,K_AB,K_AS
+8,S,encrypt,ID_A,K_BS
+9,S,encrypt,ID_A,K_AS
+10,S,send,K_AB,K_AS
+11,S,send,ID_B,K_AS
+12,S,send,K_AB,K_BS K_AS
+13,S,send,ID_A,K_BS K_AS
+14,A,receive,K_AB,K_AS
+15,A,receive,ID_B,K_AS
+16,A,receive,K_AB,K_BS K_AS
+17,A,receive,ID_A,K_BS K_AS
+18,A,decrypt,K_AB,K_AS
+19,A,decrypt,ID_B,K_AS
+20,A,decrypt,K_AB,K_AS
+21,A,decrypt,ID_A,K_AS
+22,A,encrypt,K_AB,K_BS
+23,A,encrypt,ID_A,K_BS
+24,A,send,K_AB,K_BS
+25,A,send,ID_A,K_BS
+26,A,send,E_(K_AB)ID_A,
+27,B,receive,K_AB,K_BS
+28,B,receive,ID_A,K_BS
+29,B,receive,E_(K_AB)ID_A,
+30,B,decrypt,K_AB,K_BS
+31,B,decrypt,ID_A,K_BS

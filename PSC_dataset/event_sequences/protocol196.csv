@@ -1,0 +1,105 @@
+pp,ap,mp,kp
+A,send,ID_A, 
+A,send,a^x, 
+B,receive,ID_A, 
+B,receive,a^x, 
+B,sign,a^y,Pri_B
+B,sign,a^x,Pri_B
+B,sign,ID_B,Pri_B
+B,sign,ID_A,Pri_B
+B,hash,a^x,hK_AB
+B,hash,a^y,hK_AB
+B,hash,ID_A,hK_AB
+B,hash,ID_B,hK_AB
+B,hash,ID_A,hK_AB
+B,hash,ID_B,hK_AB
+B,send,Cert_B, 
+B,send,a^y, 
+B,send,a^y,Pri_B
+B,send,a^x,Pri_B
+B,send,ID_B,Pri_B
+B,send,ID_A,Pri_B
+B,send,a^x,Pri_A hK_AB
+B,send,a^y,Pri_A hK_AB
+B,send,ID_A,Pri_A hK_AB
+B,send,ID_B,Pri_A hK_AB
+B,send,ID_A,hK_AB
+B,send,ID_B,hK_AB
+A,receive,Cert_B, 
+A,receive,a^y, 
+A,receive,a^y,Pri_B
+A,receive,a^x,Pri_B
+A,receive,ID_B,Pri_B
+A,receive,ID_A,Pri_B
+A,receive,a^x,Pri_A hK_AB
+A,receive,a^y,Pri_A hK_AB
+A,receive,ID_A,Pri_A hK_AB
+A,receive,ID_B,Pri_A hK_AB
+A,receive,ID_A,hK_AB
+A,receive,ID_B,hK_AB
+A,verify,a^y,Pub_B
+A,verify,a^x,Pub_B
+A,verify,ID_B,Pub_B
+A,verify,ID_A,Pub_B
+A,verify,a^x,Pub_A
+A,decrypt,a^x,hK_AB
+A,verify,a^y,Pub_A
+A,decrypt,a^y,hK_AB
+A,verify,ID_A,Pub_A
+A,decrypt,ID_A,hK_AB
+A,verify,ID_B,Pub_A
+A,decrypt,ID_B,hK_AB
+A,decrypt,ID_A,hK_AB
+A,decrypt,ID_B,hK_AB
+A,sign,a^x,Pri_A
+A,sign,a^y,Pri_A
+A,sign,ID_A,Pri_A
+A,sign,ID_B,Pri_A
+A,sign,a^x,Pri_A
+A,hash,a^x,hK_AB
+A,sign,a^y,Pri_A
+A,hash,a^y,hK_AB
+A,sign,ID_A,Pri_A
+A,hash,ID_A,hK_AB
+A,sign,ID_B,Pri_A
+A,hash,ID_B,hK_AB
+A,hash,ID_A,hK_AB
+A,hash,ID_B,hK_AB
+A,send,Cert_A, 
+A,send,a^x, 
+A,send,a^x,Pri_A
+A,send,a^y,Pri_A
+A,send,ID_A,Pri_A
+A,send,ID_B,Pri_A
+A,send,a^x,Pri_A hK_AB
+A,send,a^y,Pri_A hK_AB
+A,send,ID_A,Pri_A hK_AB
+A,send,ID_B,Pri_A hK_AB
+A,send,ID_A,hK_AB
+A,send,ID_B,hK_AB
+B,receive,Cert_A, 
+B,receive,a^x, 
+B,receive,a^x,Pri_A
+B,receive,a^y,Pri_A
+B,receive,ID_A,Pri_A
+B,receive,ID_B,Pri_A
+B,receive,a^x,Pri_A hK_AB
+B,receive,a^y,Pri_A hK_AB
+B,receive,ID_A,Pri_A hK_AB
+B,receive,ID_B,Pri_A hK_AB
+B,receive,ID_A,hK_AB
+B,receive,ID_B,hK_AB
+B,verify,a^x,Pub_A
+B,verify,a^y,Pub_A
+B,verify,ID_A,Pub_A
+B,verify,ID_B,Pub_A
+B,verify,a^x,Pub_A
+B,decrypt,a^x,hK_AB
+B,verify,a^y,Pub_A
+B,decrypt,a^y,hK_AB
+B,verify,ID_A,Pub_A
+B,decrypt,ID_A,hK_AB
+B,verify,ID_B,Pub_A
+B,decrypt,ID_B,hK_AB
+B,decrypt,ID_A,hK_AB
+B,decrypt,ID_B,hK_AB

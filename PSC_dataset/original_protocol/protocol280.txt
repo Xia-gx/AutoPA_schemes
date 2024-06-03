@@ -1,0 +1,4 @@
+	A→B : T_A,ID_A,ID_B
+	B→A : E_(K_AB ) {T_B,ID_A,ID_B }
+	A→B : E_(K_AB ) {T_A,ID_A,ID_B }
+Tag: 2

@@ -1,0 +1,4 @@
+        A→B : ID_A,N_A,a^x
+        B→A : ID_B,N_B,a^y,Sig_(Pri_B ) {ID_A,N_A+1,a^x,N_B,a^y },HMAC_(K_AB ) {ID_B}
+        A→B : ID_A,Sig_(Pri_A ) {ID_B,N_A^',a^x,N_B+1,a^y },HMAC_(K_AB ) {ID_A}
+Tag: 4

@@ -1,0 +1,5 @@
+	B→A : E_(Pub_S ) {ID_B,ID_A,N_B,E_(K_BS ) {T_B}},N_B^'
+        A→S : E_(Pub_S ) {ID_B,ID_A,N_B,E_(K_BS ) {T_B}},E_(Pub_S ) {ID_A,ID_B,N_A,E_(K_AS ) {T_A}},N_A^'
+        S→A : E_(K_AS ) {ID_B,N_B,K_AB },E_(K_BS ) {ID_A,N_A,K_AB },N_S
+	A→B : E_(K_BS ) {ID_A,N_A,K_AB }
+Tag: 3

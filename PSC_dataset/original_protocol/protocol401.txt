@@ -1,0 +1,6 @@
+	A→B : ID_A ||N_A,hash{K_AB,ID_A,N_A}
+	B→A : ID_A ||N_B,hash{K_BS,ID_B,N_A }
+	A→S : N_A,hash{K_BS,ID_B,N_A }
+	S→A : hash{K_AS,ID_A,ID_B,N_A}
+	A→B : hash{K_AB,ID_B,N_B}
+Tag: 2

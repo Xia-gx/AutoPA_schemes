@@ -1,0 +1,7 @@
+	A→S : ID_B, N_A
+	S→A : Sig_(Pri_S ) {ID_S,ID_A,N_A,K_(Pub_B )}
+	A→B : Sig_(Pri_A ) {ID_A,E_(Pub_B ) {N_A^' }}
+	B→S : ID_A, N_B
+	S→B : Sig_(Pri_S ) {ID_S,ID_B,N_B,K_(Pub_A )}
+	B→A : E_(Pub_A ) {ID_B,N_A^'}
+Tag: 4

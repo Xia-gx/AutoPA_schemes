@@ -1,0 +1,4 @@
+	A→B : N_A,ID_B,E_(Pub_B ) {ID_A,a^x},Sig_(Pri_A ) {N_A,ID_B,E_(Pub_B ) {ID_A,a^x}}
+	B→A : T_B,N_B,ID_A,N_A,E_(Pub_A ) {ID_B,a^y},Sig_(Pri_B ) {T_B,N_B,ID_A,N_A,E_(Pub_A ) {ID_B,a^y}}
+	A→B : N_B,ID_B,Sig_(Pri_A ) {N_B,ID_B}
+TagS : 4

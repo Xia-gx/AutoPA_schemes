@@ -1,0 +1,5 @@
+	A→B : ID_A
+        B→A : Sig_(Pri_B ) {HMAC_(K_AB){ID_A,a^y ,ID_B}}
+        A→B : Sig_(Pri_A ) {HMAC_(K_AB){ID_B,a^x ,ID_A}},E_(K_AB ) {T_A,ID_A,ID_B }
+	B→A : E_(K_AB ) {T_B,ID_A,ID_B }
+Tag: 4

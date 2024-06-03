@@ -1,0 +1,4 @@
+	A→S : ID_A,ID_B
+	S→A : Sig_(Pri_S ) {ID_A,K_(Pub_A ),T_S}, Sig_(Pri_S ) {ID_B,K_(Pub_B ),T_S}
+	A→B : Sig_(Pri_S ) {ID_A,K_(Pub_A ),T_S}, Sig_(Pri_S ) {ID_B,K_(Pub_B ),T_S}
+Tag: 2

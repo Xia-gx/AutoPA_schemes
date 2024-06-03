@@ -1,0 +1,16 @@
+,pp,ap,mp,kp
+0,A,send,ID_A,
+1,A,send,ID_A,
+2,B,receive,ID_A,
+3,B,receive,ID_A,
+4,B,encrypt,ID_B,Pub_A
+5,B,encrypt,K_AB,Pub_A
+6,B,send,ID_B,Pub_A
+7,B,send,K_AB,Pub_A
+8,A,receive,ID_B,Pub_A
+9,A,receive,K_AB,Pub_A
+10,A,decrypt,ID_B,Pri_A
+11,A,decrypt,K_AB,Pri_A
+12,A,new,N_A,
+13,A,send,N_A,
+14,B,receive,N_A,

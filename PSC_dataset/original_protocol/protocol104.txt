@@ -1,0 +1,3 @@
+	A→B : N_A
+	B→A : E_(K_AB ) {N_A,ID_B}
+Tag: 2

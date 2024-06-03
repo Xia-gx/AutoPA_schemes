@@ -1,0 +1,4 @@
+	A→B : ID_A,ID_B,N_A
+	B→A : ID_B,ID_A,N_B,hash{Password_B ||K_AB ||N_A ||N_B}
+	A→B : ID_A,ID_B,hash{K_AB ||N_B },hash{K_AB^' ||N_A ||N_B}
+Tag: 4

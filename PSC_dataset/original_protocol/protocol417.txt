@@ -1,0 +1,5 @@
+	A→B : HMAC_(K_AS ) {ID_A,ID_B,N_A}
+	B→S : HMAC_(K_AS ) {ID_A,ID_B,N_A },HMAC_(K_BS ) {ID_B,ID_A,N_B}
+	S→B : K_AB ||hash{K_AS,N_A },K_AB ||hash{K_BS,N_B }
+	B→A : K_AB ||hash{K_AS,N_A }
+Tag: 3

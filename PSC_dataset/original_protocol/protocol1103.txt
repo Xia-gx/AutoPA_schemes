@@ -1,0 +1,5 @@
+        A→S : ID_A,ID_B,N_A
+	S→A : Sig_(Pri_S ) {ID_A,K_(Pub_A ),T_S}, Sig_(Pri_S ) {ID_B,K_(Pub_B ),T_S}
+	A→B : Sig_(Pri_S ) {ID_A,K_(Pub_A ),T_S}, Sig_(Pri_S ) {ID_B,K_(Pub_B ),T_S},E_(Pub_B ) {Sig_(Pri_A ) {ID_A,ID_B,K_AB,T_A}}
+	B→A : E_(K_AB ) {T_A+1}
+Tag: 4

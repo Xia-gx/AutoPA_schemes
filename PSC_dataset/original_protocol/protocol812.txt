@@ -1,0 +1,7 @@
+        A→B : ID_A,E_(Pub_S ) {E_(Password_A ) {ID_A,ID_B,a^x },K_AS },a^x,N_A,N_A^'
+	A→S : ID_A,E_(Pub_S ) {E_(Password_A ) {ID_A,ID_B,a^x },K_AS }
+	B→A : ID_B,a^y,E_(K_AB ) {ID_A,N_B }
+	B→S : ID_B,E_(Pub_S ) {E_(Password_B ) {ID_B,ID_A,a^y },K_BS }
+	S→A : E_(K_AS ) {ID_B,a^y }
+	S→B : E_(K_BS ) {ID_A,a^x }
+Tag: 3

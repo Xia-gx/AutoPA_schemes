@@ -1,0 +1,13 @@
+,pp,ap,mp,kp
+0,A,encrypt,ID_A,Pub_B
+1,A,encrypt,Sig_(Pri_A)ID_B,Pub_B
+2,A,send,ID_A,Pub_B
+3,A,send,Sig_(Pri_A)ID_B,Pub_B
+4,B,receive,ID_A,Pub_B
+5,B,receive,Sig_(Pri_A)ID_B,Pub_B
+6,B,decrypt,ID_A,Pri_B
+7,B,decrypt,Sig_(Pri_A)ID_B,Pri_B
+8,B,send,ID_A,
+9,B,send,Sig_(Pri_B)ID_A,
+10,A,receive,ID_A,
+11,A,receive,Sig_(Pri_B)ID_A,

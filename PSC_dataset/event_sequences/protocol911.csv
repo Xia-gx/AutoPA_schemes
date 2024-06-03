@@ -1,0 +1,97 @@
+,pp,ap,mp,kp
+0,A,encrypt,ID_A,Password_A
+1,A,encrypt,ID_B,Password_A
+2,A,encrypt,a^x,Password_A
+3,A,new,N_A,
+4,A,new,N_A^',
+5,A,send,ID_A,Password_A Pub_S
+6,A,send,ID_B,Password_A Pub_S
+7,A,send,a^x,Password_A Pub_S
+8,A,send,K_AS,Pub_S
+9,A,send,a^x,
+10,A,send,N_A,
+11,A,send,N_A^',
+12,B,receive,ID_A,Password_A Pub_S
+13,B,receive,ID_B,Password_A Pub_S
+14,B,receive,a^x,Password_A Pub_S
+15,B,receive,K_AS,Pub_S
+16,B,receive,a^x,
+17,B,receive,N_A,
+18,B,receive,N_A^',
+19,B,encrypt,ID_A,Pub_S
+20,B,encrypt,ID_B,Pub_S
+21,B,encrypt,a^x,Pub_S
+22,B,encrypt,K_AS,Pub_S
+23,B,encrypt,ID_B,Password_B
+24,B,encrypt,ID_B,Pub_S
+25,B,encrypt,ID_A,Password_B
+26,B,encrypt,ID_A,Pub_S
+27,B,encrypt,a^y,Password_B
+28,B,encrypt,a^y,Pub_S
+29,B,encrypt,K_BS,Pub_S
+30,B,encrypt,ID_A,K_AB
+31,B,new,N_B,
+32,B,encrypt,N_B,K_AB
+33,B,new,N_B^',
+34,B,send,ID_A,Password_A Pub_S
+35,B,send,ID_B,Password_A Pub_S
+36,B,send,a^x,Password_A Pub_S
+37,B,send,K_AS,Pub_S
+38,B,send,ID_B,Password_B Pub_S
+39,B,send,ID_A,Password_B Pub_S
+40,B,send,a^y,Password_B Pub_S
+41,B,send,K_BS,Pub_S
+42,B,send,a^y,
+43,B,send,ID_A,K_AB
+44,B,send,N_B,K_AB
+45,B,send,N_B^',
+46,S,receive,ID_A,Password_A Pub_S
+47,S,receive,ID_B,Password_A Pub_S
+48,S,receive,a^x,Password_A Pub_S
+49,S,receive,K_AS,Pub_S
+50,S,receive,ID_B,Password_B Pub_S
+51,S,receive,ID_A,Password_B Pub_S
+52,S,receive,a^y,Password_B Pub_S
+53,S,receive,K_BS,Pub_S
+54,S,receive,a^y,
+55,S,receive,ID_A,K_AB
+56,S,receive,N_B,K_AB
+57,S,receive,N_B^',
+58,S,decrypt,ID_A,Pri_S
+59,S,decrypt,ID_B,Pri_S
+60,S,decrypt,a^x,Pri_S
+61,S,decrypt,K_AS,Pri_S
+62,S,decrypt,ID_B,Pri_S
+63,S,decrypt,ID_A,Pri_S
+64,S,decrypt,a^y,Pri_S
+65,S,decrypt,K_BS,Pri_S
+66,S,encrypt,ID_B,K_AS
+67,S,encrypt,a^y,K_AS
+68,S,encrypt,ID_A,K_BS
+69,S,encrypt,a^x,K_BS
+70,S,encrypt,ID_A,K_AB
+71,S,encrypt,N_B,K_AB
+72,S,send,ID_B,K_AS
+73,S,send,a^y,K_AS
+74,S,send,ID_A,K_BS
+75,S,send,a^x,K_BS
+76,S,send,ID_A,K_AB
+77,S,send,N_B,K_AB
+78,A,receive,ID_B,K_AS
+79,A,receive,a^y,K_AS
+80,A,receive,ID_A,K_BS
+81,A,receive,a^x,K_BS
+82,A,receive,ID_A,K_AB
+83,A,receive,N_B,K_AB
+84,A,decrypt,ID_B,K_AS
+85,A,decrypt,a^y,K_AS
+86,A,decrypt,ID_A,K_AB
+87,A,decrypt,N_B,K_AB
+88,A,encrypt,ID_A,K_BS
+89,A,encrypt,a^x,K_BS
+90,A,send,ID_A,K_BS
+91,A,send,a^x,K_BS
+92,B,receive,ID_A,K_BS
+93,B,receive,a^x,K_BS
+94,B,decrypt,ID_A,K_BS
+95,B,decrypt,a^x,K_BS

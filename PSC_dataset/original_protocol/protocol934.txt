@@ -1,0 +1,8 @@
+	A→S : ID_A,ID_B,E_(Password_A ) {a^x}
+        S→A : E_(Password_A ) {ID_B,K_AS},E_(Password_B ) {ID_A,K_BS},ID_S
+	A→B : hash{ID_B,Password_A,K_AS},E_(Password_B ) {K_BS}
+	B→S : hash{ID_B,Password_A,K_AS },hash{ID_A,Password_B,K_BS},E_(Password_B ) {a^y}
+	S→B : E_(K_AS ) {a^y },E_(K_BS ) {a^x },HMAC_(K_AS ) {a^x,a^y },HMAC_(K_BS ) {a^x,a^y }
+	B→A : E_(K_AS ) {a^y },HMAC_(K_AS ) {a^x,a^y },HMAC_(K_AB ) {N_B },N_B
+	A→B : HMAC_(K_AB ) {N_B+1}
+Tag: 1

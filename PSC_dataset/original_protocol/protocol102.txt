@@ -1,0 +1,6 @@
+	A→S : E_(Pub_S ) {ID_A,ID_B,N_A,K_(Pub_A )}
+	S→B : ID_A,N_A
+	B→S : E_(Pub_S ) {K_AB ,ID_A,ID_B,N_A}
+	S→A : E_(Pub_A ) {ID_A,ID_B ,ID_S,K_AB },E_(K_AB ) {N_A,N_B }
+	A→B : E_(K_AB ) {N_B+1}
+Tag: 2

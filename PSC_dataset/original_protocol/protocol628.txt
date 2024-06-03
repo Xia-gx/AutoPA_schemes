@@ -1,0 +1,5 @@
+        A→B : N_A,N_A^'
+	B→S : N_A,N_B
+	S→A : E_(K_AS ) {K_AB}, HMAC_(K_AS ) {ID_A,ID_B,N_A,E_(K_AS ) {K_AB}}
+	S→B : E_(K_BS ) {K_AB}, HMAC_(K_BS ) {ID_A,ID_B,N_B,E_(K_BS ) {K_AB}}
+Tag: 3

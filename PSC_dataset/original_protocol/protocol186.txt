@@ -1,0 +1,6 @@
+	A→B : K_(Pub_A )
+	B→A : K_(Pub_B )
+	A→B : E_(Pub_B ) {N_A,ID_A}
+	B→A : E_(Pub_A ) {N_B,Sig_(Pri_B ) {N_A}}
+	A→B : E_(Pub_B ) {hash{N_B}}
+TagS : 2

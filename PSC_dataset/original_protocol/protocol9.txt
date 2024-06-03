@@ -1,0 +1,6 @@
+	A→S : ID_A,E_(K_AS ) {ID_S,T_A}
+	S→A : E_(Pub_S ) {ID_A,ID_S }
+	A→B : E_(Pub_S ) {ID_A,ID_S }
+	B→S : ID_B,E_(Pub_S ) {ID_A,ID_S }
+	S→B : E_(K_BS ) {ID_A,ID_S }
+TagS : 2

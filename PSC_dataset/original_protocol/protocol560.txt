@@ -1,0 +1,6 @@
+	A→B : N_A,ID_S,E_(Pub_S ) {N_A,Password_A,ID_B}
+	B→S : N_B,E_(Pub_S ) {N_A,Password_A,ID_B}
+        S→B : E_(K_AS ) {N_A,ID_A,K_AB,T_S },E_(K_BS ) {N_B,ID_A,K_AB,T_S },Sig_(Pri_S ) {HMAC_(K_BS){ID_A,ID_B,T_S ,ID_S}}
+	B→A : E_(K_AS ) {N_A,ID_A,K_AB,T_S },hash{K_AB,N_A},N_B
+	A→B : hash{K_AB,N_A,N_B}
+Tag: 4

@@ -1,0 +1,3 @@
+	A→B : ID_B,E_(K_AB ) {HMAC_(K_AB ) {T_A,ID_B}}
+	B→A : ID_A,E_(K_AB ) {HMAC_(K_AB ) {T_B,ID_A}}
+Tag: 1

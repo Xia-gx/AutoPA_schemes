@@ -1,0 +1,7 @@
+	A→B : N_A^'
+	B→A : N_B^',N_A^',a^y
+	A→B : N_A^',N_B^',a^x
+	B→A : N_B^',N_A^',a^y,E_(K_AB ) {ID_B,ID_A,E_(Pub_A ) {N_B }}
+	A→B : N_A^',N_B^',a^x,E_(K_AB ) {E_(Pub_B ) {N_A,N_B },ID_A,ID_B,HMAC_(K_AB^' ) {ID_A,ID_B,a^x,a^y}}
+	B→A : N_B^',N_A^',E_(K_AB ) {ID_B,ID_A,a^y,a^x,HMAC_(K_AB^' ) {ID_A,ID_B,a^x,a^y}}
+Tag: 2

@@ -1,0 +1,4 @@
+	A→B : E_(Pub_A ) {ID_A,a^x,N_A}
+	B→A : E_(Pub_B ) {ID_B,a^y,N_A,N_B}
+	A→B : N_B
+Tag: 3

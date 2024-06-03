@@ -1,0 +1,4 @@
+	A→B : ID_A,ID_B,a^x
+	B→A : ID_B,ID_A,a^y,E_(K_AB ) {Sig_(Pri_B ) {a^y,a^x}}
+	A→B : ID_A,ID_B,E_(K_AB ) {Sig_(Pri_A ) {a^x,a^y}}
+Tag: 2

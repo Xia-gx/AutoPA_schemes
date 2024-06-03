@@ -1,0 +1,3 @@
+	A→B : ID_A,hash{ID_B,Password_A,N_A },Sig_(Pri_A ) {ID_A,hash{Password_A}}
+	B→A : ID_B,hash{ID_A,Password_B,N_B },Sig_(Pri_B ) {ID_B,hash{Password_B}}
+Tag: 4

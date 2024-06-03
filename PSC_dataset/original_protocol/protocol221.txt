@@ -1,0 +1,4 @@
+	A→B : E_(Pub_B ) {N_A,N_A^',Password_A}
+	B→A : E_(K_AB^' ) {K_AB},hash{Password_A,K_AB,N_A^' }
+	A→B : hash{Password_A,K_AB,N_A }
+Tag: 4

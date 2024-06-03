@@ -1,0 +1,108 @@
+,pp,ap,mp,kp
+0,A,hash,ID_A,
+1,A,hash,a^x,
+2,A,hash,b^x,
+3,A,hash,Password_A,
+4,A,hash,K_(Pub_A),
+5,A,new,N_A,
+6,A,send,ID_A,
+7,A,send,a^x,
+8,A,send,b^x,
+9,A,send,K_(Pub_A),
+10,A,send,ID_A,
+11,A,send,a^x,
+12,A,send,b^x,
+13,A,send,Password_A,
+14,A,send,K_(Pub_A),
+15,A,send,N_A,
+16,B,receive,ID_A,
+17,B,receive,a^x,
+18,B,receive,b^x,
+19,B,receive,K_(Pub_A),
+20,B,receive,ID_A,
+21,B,receive,a^x,
+22,B,receive,b^x,
+23,B,receive,Password_A,
+24,B,receive,K_(Pub_A),
+25,B,receive,N_A,
+26,B,hash,ID_B,
+27,B,hash,a^y,
+28,B,hash,b^y,
+29,B,hash,Password_A,
+30,B,send,ID_B,
+31,B,send,a^y,
+32,B,send,b^y,
+33,B,send,ID_B,
+34,B,send,a^y,
+35,B,send,b^y,
+36,B,send,Password_A,
+37,A,receive,ID_B,
+38,A,receive,a^y,
+39,A,receive,b^y,
+40,A,receive,ID_B,
+41,A,receive,a^y,
+42,A,receive,b^y,
+43,A,receive,Password_A,
+44,A,hash,ID_B,
+45,A,sign,ID_B,Pri_A
+46,A,encrypt,ID_B,K_AB
+47,A,hash,a^y,
+48,A,sign,a^y,Pri_A
+49,A,encrypt,a^y,K_AB
+50,A,hash,b^y,
+51,A,sign,b^y,Pri_A
+52,A,encrypt,b^y,K_AB
+53,A,hash,Password_A,
+54,A,sign,Password_A,Pri_A
+55,A,encrypt,Password_A,K_AB
+56,A,send,ID_B,Pri_A K_AB
+57,A,send,a^y,Pri_A K_AB
+58,A,send,b^y,Pri_A K_AB
+59,A,send,Password_A,Pri_A K_AB
+60,B,receive,ID_B,Pri_A K_AB
+61,B,receive,a^y,Pri_A K_AB
+62,B,receive,b^y,Pri_A K_AB
+63,B,receive,Password_A,Pri_A K_AB
+64,B,verify,ID_B,Pub_A
+65,B,decrypt,ID_B,K_AB
+66,B,verify,a^y,Pub_A
+67,B,decrypt,a^y,K_AB
+68,B,verify,b^y,Pub_A
+69,B,decrypt,b^y,K_AB
+70,B,verify,Password_A,Pub_A
+71,B,decrypt,Password_A,K_AB
+72,B,hash,ID_A,
+73,B,sign,ID_A,Pri_B
+74,B,encrypt,ID_A,K_AB
+75,B,hash,a^x,
+76,B,sign,a^x,Pri_B
+77,B,encrypt,a^x,K_AB
+78,B,hash,b^x,
+79,B,sign,b^x,Pri_B
+80,B,encrypt,b^x,K_AB
+81,B,hash,Password_A,
+82,B,sign,Password_A,Pri_B
+83,B,encrypt,Password_A,K_AB
+84,B,hash,K_(Pub_A),
+85,B,sign,K_(Pub_A),Pri_B
+86,B,encrypt,K_(Pub_A),K_AB
+87,B,send,ID_A,Pri_B K_AB
+88,B,send,a^x,Pri_B K_AB
+89,B,send,b^x,Pri_B K_AB
+90,B,send,Password_A,Pri_B K_AB
+91,B,send,K_(Pub_A),Pri_B K_AB
+92,A,receive,ID_A,Pri_B K_AB
+93,A,receive,a^x,Pri_B K_AB
+94,A,receive,b^x,Pri_B K_AB
+95,A,receive,Password_A,Pri_B K_AB
+96,A,receive,K_(Pub_A),Pri_B K_AB
+97,A,verify,ID_A,Pub_B
+98,A,decrypt,ID_A,K_AB
+99,A,verify,a^x,Pub_B
+100,A,decrypt,a^x,K_AB
+101,A,verify,b^x,Pub_B
+102,A,decrypt,b^x,K_AB
+103,A,verify,Password_A,Pub_B
+104,A,decrypt,Password_A,K_AB
+105,A,verify,K_(Pub_A),Pub_B
+106,A,decrypt,K_(Pub_A),K_AB

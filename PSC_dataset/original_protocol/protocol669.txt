@@ -1,0 +1,4 @@
+        A→B : N_A,E_(K_AB ) {Cert_A,a^x},N_A^'
+	B→A : E_(Pub_A ) {ID_B,ID_A,a^y,N_B,E_(K_AB ) {N_A}}
+	A→B : E_(K_AB^' ) {N_B}
+Tag: 3

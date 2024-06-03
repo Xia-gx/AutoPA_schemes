@@ -1,0 +1,5 @@
+	A→B : ID_A, N_A, Cert _A
+	B→A : N_B,E_(Pub_A ) {N_B^',hash{K_(Pub_A ),N_A,N_B,ID_A,ID_B,E_(Password_B ) {a^x}}}
+	A→B : a^y,hash{K_(Pub_A ),N_A,N_B,ID_A,ID_B,a^y,E_(Pub_A ) {K_(Pub_A ),N_A,N_B,ID_A,ID_B,E_(Password_B ) {a^x}},N_B^'}
+	B→A : hash{K_(Pub_A ),N_A,N_B,ID_A,ID_B,K_AB,E_(Pub_A ) {K_(Pub_A ),N_A,N_B,ID_A,ID_B,E_(Password_B ) {a^x}},N_B^'}
+Tag: 3

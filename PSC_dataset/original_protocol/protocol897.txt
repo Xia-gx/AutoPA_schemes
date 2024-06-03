@@ -1,0 +1,5 @@
+        A→B : N_A,ID_A,N_A^'
+        B→S : N_A,ID_A,N_B,ID_B,N_B^'
+        S→B : E_(K_BS ) {ID_S,ID_B,ID_A,K_AB,ID_B,N_B },E_(K_AS ) {ID_S,ID_A,ID_A,K_AB,ID_B,N_A },N_S
+	B→A : E_(K_AS ) {ID_S,ID_A,ID_A,K_AB,ID_B,N_A }
+Tag: 3

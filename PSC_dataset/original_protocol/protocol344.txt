@@ -1,0 +1,7 @@
+	A→B : ID_A,a^x,HMAC_(K_AS ) {Password_A,a^x}
+	B→S : ID_A,a^x,HMAC_(K_AS ) {Password_A,a^x },a^y
+	S→B : E_(K_AS ) {ID_A,a^y },E_(K_AS ) {ID_A,ID_B,K_AB },E_(K_BS ) {ID_B,a^x },E_(K_BS ) {ID_B,ID_A,K_AB }
+	B→A : E_(K_AS ) {ID_A,a^y },E_(K_AS ) {ID_A,ID_B,K_AB },E_(K_AB ) {ID_B,N_B }
+	A→B : E_(K_AB ) {ID_A,N_B,N_A }
+	B→A : E_(K_AB ) {ID_B,N_A }
+Tag: 4

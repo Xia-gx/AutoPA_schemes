@@ -1,0 +1,4 @@
+	A→B : ID_A,Cert_A,N_A
+	B→A : E_(Pub_A ) {K_AB},E_(K_AB ) {ID_A,N_A,N_B,Cert_B}
+	A→B : E_(K_AB ) {ID_B,N_B}
+TagS : 2

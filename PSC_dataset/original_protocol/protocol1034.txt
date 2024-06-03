@@ -1,0 +1,4 @@
+        A→B : N_A,N_A^'
+	B→A : Cert_B,N_B,N_A,ID_A,Sig_(Pri_B ) {N_B,N_A,ID_A}
+	A→B : Cert_A,N_A,N_B,ID_B,Sig_(Pri_A ) {N_A,N_B,ID_B}
+Tag: 4

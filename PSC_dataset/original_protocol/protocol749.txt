@@ -1,0 +1,4 @@
+        A→B : a^x,ID_A,ID_B,N_A,Sig_(Pri_A ) {ID_A,ID_B,N_A,a^x},N_A^'
+        B→A : a^y,ID_B,ID_A,N_B,N_A,Sig_(Pri_B ) {ID_B,ID_A,N_B,N_A,a^x,a^y},N_B^'
+	A→B : a^x,ID_A,ID_B,N_A,N_B,Sig_(Pri_A ) {ID_A,ID_B,N_A,N_B,a^x,a^y}
+Tag: 3

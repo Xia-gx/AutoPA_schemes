@@ -1,0 +1,12 @@
+pp,ap,mp,kp
+A,new,N_A, 
+A,send,N_A, 
+B,receive,N_A, 
+B,encrypt,N_A,K_AB
+B,encrypt,ID_B,K_AB
+B,send,N_A,K_AB
+B,send,ID_B,K_AB
+A,receive,N_A,K_AB
+A,receive,ID_B,K_AB
+A,decrypt,N_A,K_AB
+A,decrypt,ID_B,K_AB

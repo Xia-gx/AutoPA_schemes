@@ -1,0 +1,7 @@
+	A→S : N_A,ID_A,ID_B
+	S→A : N_S,T_S, E_(K_AS ) {ID_B,N_A,T_S,K_AB },E_(K_BS ) {ID_A,T_S,K_AB }
+	A→B : ID_A,N_A,E_(K_AS ) {ID_B,N_A,T_S,K_AB },E_(K_BS ) {ID_A,T_S,K_AB },N_S,T_S
+	B→A : HMAC_(K_BS ) {N_B,N_S},ID_B,N_B, HMAC_(K_AB ) {N_A,ID_B}
+	A→B : HMAC_(K_AB ) {N_A,N_B }
+	A→S : HMAC_(K_AS ) {N_A,N_S},HMAC_(K_BS ) {N_B,N_S}
+Tag: 4

@@ -1,0 +1,6 @@
+	A→S : ID_A,E_(Pub_S ) {ID_A,ID_B,Password_A,K_AB}
+        S→B : ID_A,E_(Password_B ) {ID_A,ID_B,E_(K_AB ) {ID_A,K_AB^' },K_AB^'},ID_S
+	B→A : E_(K_AB ) {ID_A,K_AB^' },E_(K_AB^' ) {ID_B,N_B }
+	A→B : E_(K_AB^' ) {ID_A,N_B,N_A }
+	B→A : E_(K_AB^' ) {ID_B,N_A }
+Tag: 1

@@ -1,0 +1,60 @@
+pp,ap,mp,kp
+A,send,ID_A, 
+A,send,ID_B, 
+S,receive,ID_A, 
+S,receive,ID_B, 
+S,new,T_S, 
+S,encrypt,T_S,Password_A
+S,encrypt,K_AB,Password_A
+S,encrypt,ID_B,Password_A
+S,encrypt,T_S,K_BS
+S,encrypt,T_S,Password_A
+S,encrypt,K_AB,K_BS
+S,encrypt,K_AB,Password_A
+S,encrypt,ID_A,K_BS
+S,encrypt,ID_A,Password_A
+S,encrypt,ID_B,K_BS
+S,encrypt,ID_B,Password_A
+S,send,T_S,Password_A
+S,send,K_AB,Password_A
+S,send,ID_B,Password_A
+S,send,T_S,K_BS Password_A
+S,send,K_AB,K_BS Password_A
+S,send,ID_A,K_BS Password_A
+S,send,ID_B,K_BS Password_A
+A,receive,T_S,Password_A
+A,receive,K_AB,Password_A
+A,receive,ID_B,Password_A
+A,receive,T_S,K_BS Password_A
+A,receive,K_AB,K_BS Password_A
+A,receive,ID_A,K_BS Password_A
+A,receive,ID_B,K_BS Password_A
+A,encrypt,T_S,K_BS
+A,encrypt,K_AB,K_BS
+A,encrypt,ID_A,K_BS
+A,encrypt,ID_B,K_BS
+A,encrypt,ID_A,K_AB
+A,new,T_A, 
+A,encrypt,T_A,K_AB
+A,send,T_S,K_BS
+A,send,K_AB,K_BS
+A,send,ID_A,K_BS
+A,send,ID_B,K_BS
+A,send,ID_A,K_AB
+A,send,T_A,K_AB
+B,receive,T_S,K_BS
+B,receive,K_AB,K_BS
+B,receive,ID_A,K_BS
+B,receive,ID_B,K_BS
+B,receive,ID_A,K_AB
+B,receive,T_A,K_AB
+B,decrypt,T_S,K_BS
+B,decrypt,K_AB,K_BS
+B,decrypt,ID_A,K_BS
+B,decrypt,ID_B,K_BS
+B,decrypt,ID_A,K_AB
+B,decrypt,T_A,K_AB
+B,encrypt,T_A+1,K_AB
+B,send,T_A+1,K_AB
+A,receive,T_A+1,K_AB
+A,decrypt,T_A+1,K_AB

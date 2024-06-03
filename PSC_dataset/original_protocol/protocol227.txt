@@ -1,0 +1,4 @@
+	A→B : N_A,a^x,K_(Pub_A )
+	B→A : ID_B,N_A,a^y,E_(Pub_A ) {K_AB,HMAC_(Password_B ) {N_A,a^x,a^y,K_AB,ID_B,ID_A}}
+	A→B : HMAC_(K_AB ) {N_A,a^x,a^y,K_AB,ID_B,ID_A,Password_B}
+Tag: 4

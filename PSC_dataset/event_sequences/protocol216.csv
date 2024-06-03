@@ -1,0 +1,103 @@
+pp,ap,mp,kp
+A,new,N_A, 
+A,send,ID_A, 
+A,send,N_A, 
+A,send,Cert_A, 
+B,receive,ID_A, 
+B,receive,N_A, 
+B,receive,Cert_A, 
+B,new,N_B, 
+B,new,N_B^', 
+B,encrypt,N_B^',Pub_A
+B,hash,K_(Pub_A ), 
+B,encrypt,K_(Pub_A ),Pub_A
+B,hash,N_A, 
+B,encrypt,N_A,Pub_A
+B,hash,N_B, 
+B,encrypt,N_B,Pub_A
+B,hash,ID_A, 
+B,encrypt,ID_A,Pub_A
+B,hash,ID_B, 
+B,encrypt,ID_B,Pub_A
+B,hash,Password_B, 
+B,encrypt,Password_B,Pub_A
+B,send,N_B, 
+B,send,N_B^',Pub_A
+B,send,K_(Pub_A ),Pub_A
+B,send,N_A,Pub_A
+B,send,N_B,Pub_A
+B,send,ID_A,Pub_A
+B,send,ID_B,Pub_A
+B,send,Password_B,Pub_A
+A,receive,N_B, 
+A,receive,N_B^',Pub_A
+A,receive,K_(Pub_A ),Pub_A
+A,receive,N_A,Pub_A
+A,receive,N_B,Pub_A
+A,receive,ID_A,Pub_A
+A,receive,ID_B,Pub_A
+A,receive,Password_B,Pub_A
+A,decrypt,N_B^',Pri_A
+A,decrypt,K_(Pub_A ),Pri_A
+A,decrypt,N_A,Pri_A
+A,decrypt,N_B,Pri_A
+A,decrypt,ID_A,Pri_A
+A,decrypt,ID_B,Pri_A
+A,decrypt,Password_B,Pri_A
+A,hash,K_(Pub_A ), 
+A,hash,N_B, 
+A,hash,ID_A, 
+A,hash,ID_B, 
+A,encrypt,K_(Pub_A ),Pub_A
+A,hash,K_(Pub_A ), 
+A,encrypt,N_A,Pub_A
+A,hash,N_A, 
+A,encrypt,N_B,Pub_A
+A,hash,N_B, 
+A,encrypt,ID_A,Pub_A
+A,hash,ID_A, 
+A,encrypt,ID_B,Pub_A
+A,hash,ID_B, 
+A,encrypt,Password_B,Pub_A
+A,hash,Password_B, 
+A,hash,N_B^', 
+A,send,K_(Pub_A ), 
+A,send,N_B, 
+A,send,ID_A, 
+A,send,ID_B, 
+A,send,K_(Pub_A ),Pub_A
+A,send,N_A,Pub_A
+A,send,N_B,Pub_A
+A,send,ID_A,Pub_A
+A,send,ID_B,Pub_A
+A,send,Password_B,Pub_A
+A,send,N_B^', 
+B,receive,K_(Pub_A ), 
+B,receive,N_B, 
+B,receive,ID_A, 
+B,receive,ID_B, 
+B,receive,K_(Pub_A ),Pub_A
+B,receive,N_A,Pub_A
+B,receive,N_B,Pub_A
+B,receive,ID_A,Pub_A
+B,receive,ID_B,Pub_A
+B,receive,Password_B,Pub_A
+B,receive,N_B^', 
+B,hash,K_(Pub_A ), 
+B,hash,N_A, 
+B,hash,N_B, 
+B,hash,ID_A, 
+B,hash,ID_B, 
+B,hash,N_B^', 
+B,send,K_(Pub_A ), 
+B,send,N_A, 
+B,send,N_B, 
+B,send,ID_A, 
+B,send,ID_B, 
+B,send,N_B^', 
+A,receive,K_(Pub_A ), 
+A,receive,N_A, 
+A,receive,N_B, 
+A,receive,ID_A, 
+A,receive,ID_B, 
+A,receive,N_B^', 

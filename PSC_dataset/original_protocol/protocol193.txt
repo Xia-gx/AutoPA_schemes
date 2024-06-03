@@ -1,0 +1,4 @@
+	A→B : ID_A,a^x
+	B→A : Cert_B,a^y,Sig_(Pri_B ) {a^y,a^x},HMAC_(K_AB ) {Sig_(Pri_B ) {a^y,a^x }}
+	A→B : Cert_A,Sig_(Pri_A ) {a^x,a^y} ,HMAC_(K_AB ) {Sig_(Pri_A ) {a^x,a^y }}
+Tag: 2

@@ -1,0 +1,105 @@
+pp,ap,mp,kp
+A,encrypt,ID_A,Pub_S
+A,encrypt,ID_B,Pub_S
+A,encrypt,ID_A,K_AS
+A,encrypt,ID_A,Pub_S
+A,encrypt,ID_B,K_AS
+A,encrypt,ID_B,Pub_S
+A,encrypt,a^x,K_AS
+A,encrypt,a^x,Pub_S
+A,new,N_A, 
+A,encrypt,N_A,Pub_S
+A,send,ID_A, 
+A,send,ID_A,Pub_S
+A,send,ID_B,Pub_S
+A,send,ID_A,K_AS Pub_S
+A,send,ID_B,K_AS Pub_S
+A,send,a^x,K_AS Pub_S
+A,send,N_A,Pub_S
+S,receive,ID_A, 
+S,receive,ID_A,Pub_S
+S,receive,ID_B,Pub_S
+S,receive,ID_A,K_AS Pub_S
+S,receive,ID_B,K_AS Pub_S
+S,receive,a^x,K_AS Pub_S
+S,receive,N_A,Pub_S
+S,decrypt,ID_A,Pri_S
+S,decrypt,ID_B,Pri_S
+S,decrypt,ID_A,K_AS
+S,decrypt,ID_A,Pri_S
+S,decrypt,ID_B,K_AS
+S,decrypt,ID_B,Pri_S
+S,decrypt,a^x,K_AS
+S,decrypt,a^x,Pri_S
+S,decrypt,N_A,Pri_S
+B,encrypt,ID_A,Pub_S
+B,encrypt,ID_B,Pub_S
+B,encrypt,ID_A,K_BS
+B,encrypt,ID_A,Pub_S
+B,encrypt,ID_B,K_BS
+B,encrypt,ID_B,Pub_S
+B,encrypt,a^y,K_BS
+B,encrypt,a^y,Pub_S
+B,new,N_B, 
+B,encrypt,N_B,Pub_S
+B,send,ID_B, 
+B,send,ID_A,Pub_S
+B,send,ID_B,Pub_S
+B,send,ID_A,K_BS Pub_S
+B,send,ID_B,K_BS Pub_S
+B,send,a^y,K_BS Pub_S
+B,send,N_B,Pub_S
+S,receive,ID_B, 
+S,receive,ID_A,Pub_S
+S,receive,ID_B,Pub_S
+S,receive,ID_A,K_BS Pub_S
+S,receive,ID_B,K_BS Pub_S
+S,receive,a^y,K_BS Pub_S
+S,receive,N_B,Pub_S
+S,decrypt,ID_A,Pri_S
+S,decrypt,ID_B,Pri_S
+S,decrypt,ID_A,K_BS
+S,decrypt,ID_A,Pri_S
+S,decrypt,ID_B,K_BS
+S,decrypt,ID_B,Pri_S
+S,decrypt,a^y,K_BS
+S,decrypt,a^y,Pri_S
+S,decrypt,N_B,Pri_S
+S,encrypt,ID_A,K_AS
+S,encrypt,a^y,K_AS
+S,encrypt,ID_B,K_BS
+S,encrypt,a^x,K_BS
+S,send,ID_A,K_AS
+S,send,a^y,K_AS
+S,send,ID_B,K_BS
+S,send,a^x,K_BS
+B,receive,ID_A,K_AS
+B,receive,a^y,K_AS
+B,receive,ID_B,K_BS
+B,receive,a^x,K_BS
+B,decrypt,ID_B,K_BS
+B,decrypt,a^x,K_BS
+B,encrypt,ID_A,K_AS
+B,encrypt,a^y,K_AS
+B,encrypt,ID_A,K_AB
+B,encrypt,N_B,K_AB
+B,send,ID_A,K_AS
+B,send,a^y,K_AS
+B,send,ID_A,K_AB
+B,send,N_B,K_AB
+A,receive,ID_A,K_AS
+A,receive,a^y,K_AS
+A,receive,ID_A,K_AB
+A,receive,N_B,K_AB
+A,decrypt,ID_A,K_AS
+A,decrypt,a^y,K_AS
+A,decrypt,ID_A,K_AB
+A,decrypt,N_B,K_AB
+A,encrypt,ID_B,K_AB
+A,encrypt,N_B+1,K_AB
+A,send,ID_B,K_AB
+A,send,N_B+1,K_AB
+B,receive,ID_B,K_AB
+B,receive,N_B+1,K_AB
+B,decrypt,ID_B,K_AB
+B,decrypt,N_B+1,K_AB

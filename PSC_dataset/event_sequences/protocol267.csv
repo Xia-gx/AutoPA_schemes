@@ -1,0 +1,27 @@
+pp,ap,mp,kp
+A,new,N_A, 
+A,send,N_A, 
+B,receive,N_A, 
+B,encrypt,ID_B,Pub_A
+B,new,N_B, 
+B,encrypt,N_B,Pub_A
+B,sign,ID_A,Pri_B
+B,encrypt,ID_A,Pub_A
+B,sign,N_A,Pri_B
+B,encrypt,N_A,Pub_A
+B,send,ID_B,Pub_A
+B,send,N_B,Pub_A
+B,send,ID_A,Pri_B Pub_A
+B,send,N_A,Pri_B Pub_A
+A,receive,ID_B,Pub_A
+A,receive,N_B,Pub_A
+A,receive,ID_A,Pri_B Pub_A
+A,receive,N_A,Pri_B Pub_A
+A,decrypt,ID_B,Pri_A
+A,decrypt,N_B,Pri_A
+A,verify,ID_A,Pub_B
+A,decrypt,ID_A,Pri_A
+A,verify,N_A,Pub_B
+A,decrypt,N_A,Pri_A
+A,send,N_B, 
+B,receive,N_B, 

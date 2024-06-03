@@ -1,0 +1,8 @@
+	A→S : ID_A,ID_B
+        S→A : ID_A,ID_B,N_S, E_(Pub_A ) {Sig_(Pri_S ) {ID_A,T_S,K_AS}},E_(Pub_B ) {Sig_(Pri_S ) {ID_B,T_S,K_BS}},ID_S
+	A→B : E_(K_AS ) {ID_A,ID_B,N_A,N_A^',N_S },N_S,E_(Pub_B ) {K_BS}
+	B→S : E_(K_AS ) {ID_A,ID_B,N_A,N_A^',N_S },E_(K_BS ) {ID_B,ID_A,N_B,N_B^',N_S }
+	S→B : E_(K_BS ) {ID_A,N_B,K_AB,N_A^' },E_(K_AS ) {ID_B,N_A,K_AB,N_B^' }
+	B→A : E_(K_AS ) {ID_B,N_A,K_AB,N_B^' },E_(K_AB ) {N_A^'+1}
+	A→B : E_(K_AB ) {N_B^'+1}
+Tag: 4

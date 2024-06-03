@@ -1,0 +1,4 @@
+	A→B : ID_A,E_(Pub_B ) {a^x}
+	B→A : ID_B,a^y,hash{ID_A,a^y,K_AB}
+	A→B : ID_A,ID_B,hash{ID_A,a^y,ID_B,K_AB,Password_A}
+Tag: 4

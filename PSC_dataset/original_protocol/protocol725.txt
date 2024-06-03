@@ -1,0 +1,5 @@
+        A→S : ID_B,E_(Pub_S ) {T_A,HMAC_(K_AS ) {ID_A,ID_B},K_(Pub_A )},N_A,N_A^'
+	S→B : ID_A
+	B→S : ID_A,E_(Pub_S ) {T_B,HMAC_(K_BS ) {ID_B,ID_A},K_AB}
+	S→A : E_(Pub_A ) {T_S,K_AB}
+Tag: 3

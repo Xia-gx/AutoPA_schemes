@@ -1,0 +1,5 @@
+	A→B : E_(Password_A ) {ID_A,ID_B,N_A }
+	B→S : ID_B,E_(Password_B ) {ID_A,ID_B,N_B,E_(Password_A ) {ID_A,ID_B,N_A }}
+	S→B : E_(Password_B ) {ID_S,K_AB,N_B,E_(Password_A ) {K_AB,N_A }}
+	B→A : E_(Password_A ) {K_AB,N_A }
+TagS : 3

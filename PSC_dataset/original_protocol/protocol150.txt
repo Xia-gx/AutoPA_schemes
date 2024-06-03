@@ -1,0 +1,5 @@
+	A→S : ID_A,ID_B,a^x
+	S→B : E_(K_AS ) {ID_A,ID_B,a^z}, E_(K_BS ) {ID_A,ID_B,a^z},a^x
+	B→A : E_(K_AS ) {ID_A,ID_B,a^z},HMAC_(K_AB ) {a^x },a^y
+	A→B : HMAC_(K_AB ) {a^y }
+Tag: 4

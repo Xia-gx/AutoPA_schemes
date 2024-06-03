@@ -1,0 +1,6 @@
+	A→B : Cert_A
+	B→A : Cert_B
+	A→B : E_(Pub_B ) {N_A,ID_A}
+	B→A : E_(Pub_A ) {N_B,Sig_(Pri_B ) {ID_B,ID_A,N_A,N_B}}
+	A→B : E_(Pub_B ) {hash{N_B}}
+TagS : 4
